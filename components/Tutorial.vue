@@ -58,6 +58,7 @@
           />
         </svg>
       </a>
+      <button class="my-btn">Button</button>
       <div class="mt-8 bg-white overflow-hidden shadow sm:rounded-lg p-6">
         <h2 class="text-2xl text-red-400 leading-7 font-semibold">
           Welcome to your Nuxt Application
@@ -120,6 +121,7 @@
         ></a>
       </div>
     </div>
+
     <div class="antialiased text-gray-900 px-6">
       <div class="max-w-xl mx-auto py-12 divide-y md:max-w-4xl">
         <div class="py-8">
