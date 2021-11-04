@@ -11,6 +11,7 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.3.4",
     "core-js": "^3.15.1",
+    "feather-icons": "^4.28.0",
     "nuxt": "^2.15.7",
     "uuid": "^8.3.2"
   },
