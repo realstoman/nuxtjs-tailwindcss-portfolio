@@ -1,7 +1,9 @@
 <template>
-  <Tutorial/>
+  <div>
+    <AppBanner />
+  </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
