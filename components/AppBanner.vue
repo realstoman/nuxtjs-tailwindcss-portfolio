@@ -79,7 +79,27 @@
 </template>
 
 <script>
-export default {};
+import feather from "feather-icons";
+
+export default {
+  name: "Home",
+  data: () => {
+    return {
+      theme: "",
+    };
+  },
+  created() {
+    // this.theme = localStorage.getItem('theme') || 'light';
+  },
+  mounted() {
+    feather.replace();
+    // this.theme = localStorage.getItem('theme') || 'light';
+  },
+  updated() {
+    feather.replace();
+  },
+  methods: {},
+};
 </script>
 
 <style lang="scss" scoped></style>
