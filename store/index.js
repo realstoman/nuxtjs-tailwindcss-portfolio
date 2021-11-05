@@ -737,6 +737,49 @@ export const state = () => ({
       ],
     },
   ],
+  clientsHeading: "Some of the brands I worked with",
+  clients: [
+    {
+      id: 1,
+      title: "Amazon",
+      img: "../brands/amazon_gray.png",
+    },
+    {
+      id: 2,
+      title: "Sony",
+      img: "../brands/sony_gray.png",
+    },
+    {
+      id: 3,
+      title: "Adidas",
+      img: "../brands/adidas_gray.png",
+    },
+    {
+      id: 4,
+      title: "FILA",
+      img: "../brands/fila_gray.png",
+    },
+    {
+      id: 5,
+      title: "NB",
+      img: "../brands/nb_gray.png",
+    },
+    {
+      id: 6,
+      title: "SAMSUNG",
+      img: "../brands/samsung_gray.png",
+    },
+    {
+      id: 7,
+      title: "CANON",
+      img: "../brands/canon_gray.png",
+    },
+    {
+      id: 7,
+      title: "PUMA",
+      img: "../brands/puma_gray.png",
+    },
+  ],
 });
 
 export const getters = {
