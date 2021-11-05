@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="container mx-auto">
     <div v-if="project">
       <!-- Project heading and meta info start -->
+
       <div>
         <p
           class="
@@ -51,6 +52,21 @@
         </div>
       </div>
       <!-- Project heading and meta info end -->
+
+      <!-- Project gallery start -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
+        <div
+          class="mb-10 sm:mb-0"
+          v-for="projectImage in project.projectImages"
+          :key="projectImage.id"
+        >
+          <img
+            :src="projectImage.img"
+            class="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
+          />
+        </div>
+      </div>
+      <!-- Project gallery end -->
     </div>
 
     <div v-else class="container mx-auto text-center">

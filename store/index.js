@@ -15,17 +15,17 @@ export const state = () => ({
         {
           id: 1,
           title: "Kabul Project Management UI",
-          img: "images/ui-project-1.jpg",
+          img: "../images/ui-project-1.jpg",
         },
         {
           id: 2,
           title: "Kabul Project Management UI",
-          img: "images/web-project-2.jpg",
+          img: "../images/web-project-1.jpg",
         },
         {
           id: 3,
           title: "Kabul Project Management UI",
-          img: "images/mobile-project-2.jpg",
+          img: "../images/web-project-2.jpg",
         },
       ],
     },
@@ -40,17 +40,17 @@ export const state = () => ({
         {
           id: 1,
           title: "Phoenix Digital Agency",
-          img: "images/ui-project-1.jpg",
+          img: "../images/mobile-project-1.jpg",
         },
         {
           id: 2,
           title: "Phoenix Digital Agency",
-          img: "images/web-project-2.jpg",
+          img: "../images/web-project-2.jpg",
         },
         {
           id: 3,
           title: "Phoenix Digital Agency",
-          img: "images/mobile-project-2.jpg",
+          img: "../images/mobile-project-2.jpg",
         },
       ],
     },
