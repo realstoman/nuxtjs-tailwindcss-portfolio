@@ -5,7 +5,7 @@ export const state = () => ({
   projectsDescription: "Some of the projects I have successfully completed",
   projects: [
     {
-      id: "f71400ed-26b1-43d0-940c-7cabd3546dc6",
+      id: uuidv4(),
       title: "Google Health Platform",
       category: "Web Application",
       img: "images/web-project-2.jpg",
@@ -127,7 +127,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "f31400ed-26b1-43d0-940c-7cabd3546bb7",
+      id: uuidv4(),
       title: "Phoenix Digital Agency",
       category: "Mobile Application",
       img: "images/mobile-project-2.jpg",
@@ -249,7 +249,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "6rr400ed-26b1-43d0-940c-7cabd3546bb7",
+      id: uuidv4(),
       title: "Project Management UI",
       category: "UI / Frontend",
       img: "images/ui-project-1.jpg",
@@ -371,7 +371,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "yy2400ed-26b1-43d0-940c-7cabd3546bb7",
+      id: uuidv4(),
       title: "Cloud Storage Platform",
       category: "UI / Database",
       img: "images/ui-project-2.jpg",
@@ -493,7 +493,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "2tt400ed-26b1-43d0-940c-7cabd3546bb7",
+      id: uuidv4(),
       title: "Kabul Social App",
       category: "Mobile Application",
       img: "images/mobile-project-1.jpg",
@@ -615,7 +615,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "2tu500ed-26b1-43d0-940c-7cabd3546bb7",
+      id: uuidv4(),
       title: "Apple Design System",
       category: "Web Application",
       img: "images/web-project-1.jpg",
