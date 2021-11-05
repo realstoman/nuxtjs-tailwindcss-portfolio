@@ -110,7 +110,7 @@
 
 <script>
 export default {
-  props: ["isOpen"],
+  props: ["isOpen", "showModal", "modal", "categories"],
 };
 </script>
 

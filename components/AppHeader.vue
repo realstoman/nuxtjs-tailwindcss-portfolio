@@ -62,7 +62,12 @@
       <!-- Header menu links and small screen humberger menu end -->
 
       <!-- Header links start -->
-      <AppNavigation :isOpen="isOpen" />
+      <AppNavigation
+        :isOpen="isOpen"
+        :showModal="showModal"
+        :modal="modal"
+        :categories="categories"
+      />
       <!-- Header links end -->
 
       <!-- Header right section buttons start -->
@@ -104,7 +109,7 @@
             cursor-pointer
           "
         >
-          <a href="#" @click="toggleTheme" aria-label="Theme Switcher">
+          <a href="#" aria-label="Theme Switcher">
             <i
               data-feather="moon"
               class="
