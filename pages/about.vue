@@ -12,7 +12,7 @@
 
     <div class="container mx-auto">
       <!-- About counter start -->
-      <!-- <AboutClients /> -->
+      <AboutClients />
       <!-- About counter end -->
     </div>
   </div>
