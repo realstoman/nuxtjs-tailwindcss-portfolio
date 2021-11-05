@@ -1,7 +1,9 @@
 <template>
-  <Tutorial/>
+  <div class="container mx-auto">
+    <AppBanner />
+  </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
