@@ -218,14 +218,16 @@
 <script>
 export default {
   props: ["showModal", "modal", "categories"],
-  data() {
-    return {};
+  data: () => {
+    return {
+      // Todo
+    };
   },
   methods: {},
 };
 </script>
 
-<style scoped>
+<style>
 .modal-body {
   max-height: 500px;
 }

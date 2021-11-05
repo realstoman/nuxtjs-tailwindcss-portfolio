@@ -140,6 +140,7 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import feather from "feather-icons";
 import HireMeModal from "./HireMeModal.vue";
 
@@ -152,32 +153,10 @@ export default {
       isOpen: false,
       theme: "",
       modal: false,
-      categories: [
-        {
-          id: 1,
-          value: "web",
-          name: "Web Application",
-        },
-        {
-          id: 2,
-          value: "mobile",
-          name: "Mobile Applicaiton",
-        },
-        {
-          id: 3,
-          value: "ui-ux",
-          name: "UI/UX Design",
-        },
-        {
-          id: 4,
-          value: "branding",
-          name: "Branding",
-        },
-      ],
     };
   },
-  mounted() {
-    feather.replace();
+  computed: {
+    ...mapState(["categories"]),
   },
   methods: {
     showModal() {
@@ -194,6 +173,9 @@ export default {
         this.modal = true;
       }
     },
+  },
+  mounted() {
+    feather.replace();
   },
   updated() {
     feather.replace();
