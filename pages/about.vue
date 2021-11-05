@@ -2,7 +2,7 @@
   <div>
     <div class="container mx-auto">
       <!-- About me start -->
-      <!-- <AboutMe /> -->
+      <AboutMe />
       <!-- About me end -->
     </div>
 
