@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-auto">
+    <!-- Check if there are projects, if there are, then load -->
     <div v-if="project">
       <!-- Project heading and meta info start -->
-
       <div>
         <p
           class="
@@ -209,6 +209,7 @@
       <!-- Project info end -->
     </div>
 
+    <!-- Load not found components if no project found -->
     <div v-else class="container mx-auto text-center">
       <h1>Not projects yet</h1>
     </div>
@@ -216,16 +217,14 @@
 </template>
 
 <script>
-// import { mapState } from "vuex";
 import feather from "feather-icons";
 export default {
   data: () => {
     return {
-      // id: this.$route.params.id,
+      // Todo
     };
   },
   computed: {
-    // ...mapState(["projectsData"]),
     project() {
       return this.$store.getters.getProjectById(this.$route.params.id);
     },

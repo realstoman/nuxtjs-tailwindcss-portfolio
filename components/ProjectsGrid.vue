@@ -71,11 +71,6 @@
 import { mapState } from "vuex";
 
 export default {
-  // props: {
-  //   datasource: {
-  //     type: [Array, Object],
-  //   },
-  // },
   computed: {
     ...mapState(["projectsHeading", "projectsDescription", "projects"]),
   },

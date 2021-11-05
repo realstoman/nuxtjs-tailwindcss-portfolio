@@ -1,12 +1,10 @@
 <template>
   <div class="container mx-auto sm:flex py-5 sm:py-10 mt-10 sm:mt-20">
-    <!-- Contact form start -->
+    <!-- Import contact form -->
     <ContactForm />
-    <!-- Contact form end -->
 
-    <!-- Contact details start -->
+    <!-- Import contact details -->
     <ContactDetails :contacts="contacts" />
-    <!-- Contact details end -->
   </div>
 </template>
 

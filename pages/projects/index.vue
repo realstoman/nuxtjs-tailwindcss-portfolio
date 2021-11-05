@@ -1,12 +1,11 @@
 <template>
   <div class="container mx-auto">
-    <!-- Projects grid -->
+    <!-- Import projects grid -->
     <ProjectsGrid />
   </div>
 </template>
 
 <script>
-import { mapState } from "vuex";
 export default {
   data: () => {
     return {
@@ -14,7 +13,7 @@ export default {
     };
   },
   computed: {
-    // ...mapState(["projectsData"]),
+    // Todo
   },
 };
 </script>
