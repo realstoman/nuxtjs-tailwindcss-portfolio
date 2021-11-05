@@ -5,7 +5,7 @@ export const state = () => ({
   projectsDescription: "Some of the projects I have successfully completed",
   projects: [
     {
-      id: uuidv4(),
+      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
       title: "Google Health Platform",
       category: "Web Application",
       img: "images/web-project-2.jpg",
@@ -20,39 +20,39 @@ export const state = () => ({
       socialTitle: "Share This",
       projectImages: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Kabul Project Management UI",
           img: "../images/ui-project-1.jpg",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Kabul Project Management UI",
           img: "../images/web-project-1.jpg",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Kabul Project Management UI",
           img: "../images/web-project-2.jpg",
         },
       ],
       companyInfos: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Name",
           details: "Company Ltd",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Services",
           details: "UI Design & Frontend Development",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Website",
           details: "https://company.com",
         },
         {
-          id: 4,
+          id: uuidv4(),
           title: "Phone",
           details: "555 8888 888",
         },
@@ -67,59 +67,59 @@ export const state = () => ({
       ],
       projectDetails: [
         {
-          id: 1,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
         {
-          id: 2,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 3,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 4,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
       ],
       socialSharings: [
         {
-          id: 1,
+          id: uuidv4(),
           name: "Twitter",
           icon: "twitter",
           url: "https://twitter.com/NangialaiStoman",
         },
         {
-          id: 2,
+          id: uuidv4(),
           name: "Instagram",
           icon: "instagram",
           url: "https://instagram.com/NangialaiStoman",
         },
         {
-          id: 3,
+          id: uuidv4(),
           name: "Facebook",
           icon: "facebook",
           url: "https://facebook.com/",
         },
         {
-          id: 4,
+          id: uuidv4(),
           name: "LinkedIn",
           icon: "linkedin",
           url: "https://linkedin.com/",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Youtube",
           icon: "youtube",
           url: "https://www.youtube.com/c/StomanStudio",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Dribbble",
           icon: "dribbble",
           url: "https://www.dribbble.com/",
@@ -127,7 +127,7 @@ export const state = () => ({
       ],
     },
     {
-      id: uuidv4(),
+      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdc",
       title: "Phoenix Digital Agency",
       category: "Mobile Application",
       img: "images/mobile-project-2.jpg",
@@ -142,39 +142,39 @@ export const state = () => ({
       socialTitle: "Share This",
       projectImages: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Phoenix Digital Agency",
           img: "../images/mobile-project-1.jpg",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Phoenix Digital Agency",
           img: "../images/web-project-2.jpg",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Phoenix Digital Agency",
           img: "../images/mobile-project-2.jpg",
         },
       ],
       companyInfos: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Name",
           details: "Company Ltd",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Services",
           details: "UI Design & Frontend Development",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Website",
           details: "https://company.com",
         },
         {
-          id: 4,
+          id: uuidv4(),
           title: "Phone",
           details: "555 8888 888",
         },
@@ -189,59 +189,59 @@ export const state = () => ({
       ],
       projectDetails: [
         {
-          id: 1,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
         {
-          id: 2,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 3,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 4,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
       ],
       socialSharings: [
         {
-          id: 1,
+          id: uuidv4(),
           name: "Twitter",
           icon: "twitter",
           url: "https://twitter.com/NangialaiStoman",
         },
         {
-          id: 2,
+          id: uuidv4(),
           name: "Instagram",
           icon: "instagram",
           url: "https://instagram.com/NangialaiStoman",
         },
         {
-          id: 3,
+          id: uuidv4(),
           name: "Facebook",
           icon: "facebook",
           url: "https://facebook.com/",
         },
         {
-          id: 4,
+          id: uuidv4(),
           name: "LinkedIn",
           icon: "linkedin",
           url: "https://linkedin.com/",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Youtube",
           icon: "youtube",
           url: "https://www.youtube.com/c/StomanStudio",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Dribbble",
           icon: "dribbble",
           url: "https://www.dribbble.com/",
@@ -249,7 +249,7 @@ export const state = () => ({
       ],
     },
     {
-      id: uuidv4(),
+      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdy",
       title: "Project Management UI",
       category: "UI / Frontend",
       img: "images/ui-project-1.jpg",
@@ -264,39 +264,39 @@ export const state = () => ({
       socialTitle: "Share This",
       projectImages: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Project Management UI",
           img: "../images/mobile-project-1.jpg",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Project Management UI",
           img: "../images/web-project-2.jpg",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Project Management UI",
           img: "../images/mobile-project-2.jpg",
         },
       ],
       companyInfos: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Name",
           details: "Company Ltd",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Services",
           details: "UI Design & Frontend Development",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Website",
           details: "https://company.com",
         },
         {
-          id: 4,
+          id: uuidv4(),
           title: "Phone",
           details: "555 8888 888",
         },
@@ -311,59 +311,59 @@ export const state = () => ({
       ],
       projectDetails: [
         {
-          id: 1,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
         {
-          id: 2,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 3,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 4,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
       ],
       socialSharings: [
         {
-          id: 1,
+          id: uuidv4(),
           name: "Twitter",
           icon: "twitter",
           url: "https://twitter.com/NangialaiStoman",
         },
         {
-          id: 2,
+          id: uuidv4(),
           name: "Instagram",
           icon: "instagram",
           url: "https://instagram.com/NangialaiStoman",
         },
         {
-          id: 3,
+          id: uuidv4(),
           name: "Facebook",
           icon: "facebook",
           url: "https://facebook.com/",
         },
         {
-          id: 4,
+          id: uuidv4(),
           name: "LinkedIn",
           icon: "linkedin",
           url: "https://linkedin.com/",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Youtube",
           icon: "youtube",
           url: "https://www.youtube.com/c/StomanStudio",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Dribbble",
           icon: "dribbble",
           url: "https://www.dribbble.com/",
@@ -371,7 +371,7 @@ export const state = () => ({
       ],
     },
     {
-      id: uuidv4(),
+      id: "260d1271-f1f2-4bc9-a5eb-05a89c8ccc99",
       title: "Cloud Storage Platform",
       category: "UI / Database",
       img: "images/ui-project-2.jpg",
@@ -386,39 +386,39 @@ export const state = () => ({
       socialTitle: "Share This",
       projectImages: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Cloud Storage Platform",
           img: "../images/web-project-1.jpg",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Cloud Storage Platform",
           img: "../images/web-project-2.jpg",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Cloud Storage Platform",
           img: "../images/mobile-project-2.jpg",
         },
       ],
       companyInfos: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Name",
           details: "Company Ltd",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Services",
           details: "UI Design & Frontend Development",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Website",
           details: "https://company.com",
         },
         {
-          id: 4,
+          id: uuidv4(),
           title: "Phone",
           details: "555 8888 888",
         },
@@ -433,59 +433,59 @@ export const state = () => ({
       ],
       projectDetails: [
         {
-          id: 1,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
         {
-          id: 2,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 3,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 4,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
       ],
       socialSharings: [
         {
-          id: 1,
+          id: uuidv4(),
           name: "Twitter",
           icon: "twitter",
           url: "https://twitter.com/NangialaiStoman",
         },
         {
-          id: 2,
+          id: uuidv4(),
           name: "Instagram",
           icon: "instagram",
           url: "https://instagram.com/NangialaiStoman",
         },
         {
-          id: 3,
+          id: uuidv4(),
           name: "Facebook",
           icon: "facebook",
           url: "https://facebook.com/",
         },
         {
-          id: 4,
+          id: uuidv4(),
           name: "LinkedIn",
           icon: "linkedin",
           url: "https://linkedin.com/",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Youtube",
           icon: "youtube",
           url: "https://www.youtube.com/c/StomanStudio",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Dribbble",
           icon: "dribbble",
           url: "https://www.dribbble.com/",
@@ -493,7 +493,7 @@ export const state = () => ({
       ],
     },
     {
-      id: uuidv4(),
+      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdm",
       title: "Kabul Social App",
       category: "Mobile Application",
       img: "images/mobile-project-1.jpg",
@@ -508,39 +508,39 @@ export const state = () => ({
       socialTitle: "Share This",
       projectImages: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Kabul Social App",
           img: "../images/web-project-1.jpg",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Kabul Social App",
           img: "../images/web-project-2.jpg",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Kabul Social App",
           img: "../images/mobile-project-2.jpg",
         },
       ],
       companyInfos: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Name",
           details: "Company Ltd",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Services",
           details: "UI Design & Frontend Development",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Website",
           details: "https://company.com",
         },
         {
-          id: 4,
+          id: uuidv4(),
           title: "Phone",
           details: "555 8888 888",
         },
@@ -555,59 +555,59 @@ export const state = () => ({
       ],
       projectDetails: [
         {
-          id: 1,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
         {
-          id: 2,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 3,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 4,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
       ],
       socialSharings: [
         {
-          id: 1,
+          id: uuidv4(),
           name: "Twitter",
           icon: "twitter",
           url: "https://twitter.com/NangialaiStoman",
         },
         {
-          id: 2,
+          id: uuidv4(),
           name: "Instagram",
           icon: "instagram",
           url: "https://instagram.com/NangialaiStoman",
         },
         {
-          id: 3,
+          id: uuidv4(),
           name: "Facebook",
           icon: "facebook",
           url: "https://facebook.com/",
         },
         {
-          id: 4,
+          id: uuidv4(),
           name: "LinkedIn",
           icon: "linkedin",
           url: "https://linkedin.com/",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Youtube",
           icon: "youtube",
           url: "https://www.youtube.com/c/StomanStudio",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Dribbble",
           icon: "dribbble",
           url: "https://www.dribbble.com/",
@@ -615,7 +615,7 @@ export const state = () => ({
       ],
     },
     {
-      id: uuidv4(),
+      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccbb",
       title: "Apple Design System",
       category: "Web Application",
       img: "images/web-project-1.jpg",
@@ -630,39 +630,39 @@ export const state = () => ({
       socialTitle: "Share This",
       projectImages: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Apple Design System",
           img: "../images/web-project-1.jpg",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Apple Design System",
           img: "../images/web-project-2.jpg",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Apple Design System",
           img: "../images/mobile-project-2.jpg",
         },
       ],
       companyInfos: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Name",
           details: "Company Ltd",
         },
         {
-          id: 2,
+          id: uuidv4(),
           title: "Services",
           details: "UI Design & Frontend Development",
         },
         {
-          id: 3,
+          id: uuidv4(),
           title: "Website",
           details: "https://company.com",
         },
         {
-          id: 4,
+          id: uuidv4(),
           title: "Phone",
           details: "555 8888 888",
         },
@@ -677,59 +677,59 @@ export const state = () => ({
       ],
       projectDetails: [
         {
-          id: 1,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
         {
-          id: 2,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 3,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
         },
         {
-          id: 4,
+          id: uuidv4(),
           details:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
         },
       ],
       socialSharings: [
         {
-          id: 1,
+          id: uuidv4(),
           name: "Twitter",
           icon: "twitter",
           url: "https://twitter.com/NangialaiStoman",
         },
         {
-          id: 2,
+          id: uuidv4(),
           name: "Instagram",
           icon: "instagram",
           url: "https://instagram.com/NangialaiStoman",
         },
         {
-          id: 3,
+          id: uuidv4(),
           name: "Facebook",
           icon: "facebook",
           url: "https://facebook.com/",
         },
         {
-          id: 4,
+          id: uuidv4(),
           name: "LinkedIn",
           icon: "linkedin",
           url: "https://linkedin.com/",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Youtube",
           icon: "youtube",
           url: "https://www.youtube.com/c/StomanStudio",
         },
         {
-          id: 5,
+          id: uuidv4(),
           name: "Dribbble",
           icon: "dribbble",
           url: "https://www.dribbble.com/",
@@ -740,44 +740,62 @@ export const state = () => ({
   clientsHeading: "Some of the brands I worked with",
   clients: [
     {
-      id: 1,
+      id: uuidv4(),
       title: "Amazon",
       img: "../brands/amazon_gray.png",
     },
     {
-      id: 2,
+      id: uuidv4(),
       title: "Sony",
       img: "../brands/sony_gray.png",
     },
     {
-      id: 3,
+      id: uuidv4(),
       title: "Adidas",
       img: "../brands/adidas_gray.png",
     },
     {
-      id: 4,
+      id: uuidv4(),
       title: "FILA",
       img: "../brands/fila_gray.png",
     },
     {
-      id: 5,
+      id: uuidv4(),
       title: "NB",
       img: "../brands/nb_gray.png",
     },
     {
-      id: 6,
+      id: uuidv4(),
       title: "SAMSUNG",
       img: "../brands/samsung_gray.png",
     },
     {
-      id: 7,
+      id: uuidv4(),
       title: "CANON",
       img: "../brands/canon_gray.png",
     },
     {
-      id: 7,
+      id: uuidv4(),
       title: "PUMA",
       img: "../brands/puma_gray.png",
+    },
+  ],
+  aboutMe: [
+    {
+      id: uuidv4(),
+      bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+    },
+    {
+      id: uuidv4(),
+      bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+    },
+    {
+      id: uuidv4(),
+      bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+    },
+    {
+      id: uuidv4(),
+      bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
     },
   ],
 });
