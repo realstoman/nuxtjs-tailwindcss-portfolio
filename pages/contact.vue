@@ -1,9 +1,50 @@
 <template>
-  <div>contact page</div>
+  <div class="container mx-auto sm:flex py-5 sm:py-10 mt-10 sm:mt-20">
+    <!-- Contact form start -->
+    <ContactForm />
+    <!-- Contact form end -->
+
+    <!-- Contact details start -->
+    <ContactDetails :contacts="contacts" />
+    <!-- Contact details end -->
+  </div>
 </template>
 
 <script>
-export default {};
-</script>
+import feather from "feather-icons";
 
-<style lang="scss" scoped></style>
+export default {
+  components: {
+    ContactForm,
+    ContactDetails,
+  },
+  data: () => {
+    return {
+      contacts: [
+        {
+          id: 1,
+          name: "Your Address, Your City, Your Country",
+          icon: "map-pin",
+        },
+        {
+          id: 2,
+          name: "email@domain.com",
+          icon: "mail",
+        },
+        {
+          id: 3,
+          name: "555 8888 888",
+          icon: "phone",
+        },
+      ],
+    };
+  },
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
+  },
+  methods: {},
+};
+</script>
