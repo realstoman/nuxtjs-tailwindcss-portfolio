@@ -1,9 +1,40 @@
 <template>
   <div class="container mx-auto">
+    <!-- Import app banner -->
     <AppBanner />
+
+    <!-- Import projects grid -->
+    <ProjectsGrid />
+
+    <!-- View more projects start -->
+    <div class="mt-10 sm:mt-20 flex justify-center">
+      <NuxtLink
+        to="/projects"
+        class="
+          flex
+          items-center
+          px-6
+          py-3
+          rounded-xl
+          shadow-lg
+          hover:shadow-xl
+          bg-indigo-500
+          hover:bg-indigo-600
+          focus:ring-1 focus:ring-indigo-900
+          text-white text-lg
+          sm:text-xl
+          font-medium
+        "
+        aria-label="More Projects"
+        >More Projects</NuxtLink
+      >
+    </div>
+    <!-- View more projects end -->
   </div>
 </template>
 
 <script>
 export default {};
 </script>
+
+<style scoped></style>

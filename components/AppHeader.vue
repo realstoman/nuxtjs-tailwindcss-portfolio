@@ -140,6 +140,7 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import feather from "feather-icons";
 import HireMeModal from "./HireMeModal.vue";
 
@@ -147,47 +148,17 @@ export default {
   components: {
     HireMeModal,
   },
-  data() {
+  data: () => {
     return {
       isOpen: false,
       theme: "",
       modal: false,
-      categories: [
-        {
-          id: 1,
-          value: "web",
-          name: "Web Application",
-        },
-        {
-          id: 2,
-          value: "mobile",
-          name: "Mobile Applicaiton",
-        },
-        {
-          id: 3,
-          value: "ui-ux",
-          name: "UI/UX Design",
-        },
-        {
-          id: 4,
-          value: "branding",
-          name: "Branding",
-        },
-      ],
     };
   },
-
-  created() {
-    // this.theme = localStorage.getItem('theme') || 'light';
-  },
-  mounted() {
-    feather.replace();
-    // this.theme = localStorage.getItem('theme') || 'light';
+  computed: {
+    ...mapState(["categories"]),
   },
   methods: {
-    updateTheme(theme) {
-      this.theme = theme;
-    },
     showModal() {
       if (this.modal) {
         // Stop screen scrolling
@@ -203,15 +174,13 @@ export default {
       }
     },
   },
+  mounted() {
+    feather.replace();
+  },
   updated() {
     feather.replace();
   },
 };
 </script>
 
-<style scoped>
-#nav a.router-link-exact-active {
-  @apply text-indigo-700;
-  @apply font-medium;
-}
-</style>
+<style></style>

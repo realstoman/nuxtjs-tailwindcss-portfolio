@@ -27,7 +27,7 @@
         </p>
         <ul class="flex gap-4 sm:gap-8">
           <a
-            v-for="social in socials"
+            v-for="social in socialProfiles"
             :key="social.id"
             :href="social.url"
             target="__blank"
@@ -74,38 +74,16 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import feather from "feather-icons";
 export default {
-  data() {
+  data: () => {
     return {
-      copyrightDate: new Date().getFullYear(),
-      socials: [
-        {
-          id: 1,
-          name: "GitHub",
-          icon: "github",
-          url: "https://github.com/NangialaiStoman",
-        },
-        {
-          id: 2,
-          name: "Twitter",
-          icon: "twitter",
-          url: "https://twitter.com/NangialaiStoman",
-        },
-        {
-          id: 3,
-          name: "Instagram",
-          icon: "instagram",
-          url: "https://instagram.com/NangialaiStoman",
-        },
-        {
-          id: 4,
-          name: "Behance",
-          icon: "feather",
-          url: "https://behance.net/NangialaiStoman",
-        },
-      ],
+      // Todo
     };
+  },
+  computed: {
+    ...mapState(["copyrightDate", "socialProfiles"]),
   },
   mounted() {
     feather.replace();
