@@ -75,7 +75,6 @@
       </div>
     </div>
     <div class="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0">
-      <!-- <DeveloperLightIllustration /> -->
       <DeveloperLightIllustration />
     </div>
   </section>
@@ -85,23 +84,18 @@
 import feather from "feather-icons";
 
 export default {
-  name: "Home",
   data: () => {
     return {
-      theme: "",
+      // Todo
     };
   },
-  created() {
-    // this.theme = localStorage.getItem('theme') || 'light';
-  },
+
   mounted() {
     feather.replace();
-    // this.theme = localStorage.getItem('theme') || 'light';
   },
   updated() {
     feather.replace();
   },
-  methods: {},
 };
 </script>
 
