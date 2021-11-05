@@ -14,10 +14,6 @@
 import feather from "feather-icons";
 
 export default {
-  components: {
-    ContactForm,
-    ContactDetails,
-  },
   data: () => {
     return {
       contacts: [
@@ -45,6 +41,5 @@ export default {
   updated() {
     feather.replace();
   },
-  methods: {},
 };
 </script>
