@@ -92,6 +92,31 @@
         <!-- Hire me button end -->
 
         <!-- Theme switcher largr screen start -->
+        <div
+          class="
+            ml-8
+            bg-primary-light
+            dark:bg-ternary-dark
+            px-3
+            py-2
+            shadow-sm
+            rounded-xl
+            cursor-pointer
+          "
+        >
+          <a href="#" @click="toggleTheme" aria-label="Theme Switcher">
+            <i
+              data-feather="moon"
+              class="
+                text-liText-ternary-dark
+                hover:text-gray-400
+                dark:text-liText-ternary-light
+                dark:hover:text-liBorder-primary-light
+                w-5
+              "
+            ></i>
+          </a>
+        </div>
         <!-- Theme switcher largr screen end -->
       </div>
       <!-- Header right section buttons stendart -->
