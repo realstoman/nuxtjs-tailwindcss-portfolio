@@ -109,7 +109,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["isOpen"],
+};
 </script>
 
 <style scoped></style>

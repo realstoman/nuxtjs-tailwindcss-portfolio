@@ -62,7 +62,7 @@
       <!-- Header menu links and small screen humberger menu end -->
 
       <!-- Header links start -->
-      <AppNavigation />
+      <AppNavigation :isOpen="isOpen" />
       <!-- Header links end -->
 
       <!-- Header right section buttons start -->
