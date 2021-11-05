@@ -1,18 +1,12 @@
 <template>
   <div class="container mx-auto">
     <AppBanner />
-
-    <Projects />
+    <ProjectsGrid />
   </div>
 </template>
 
 <script>
-import Projects from "./projects.vue";
-export default {
-  components: {
-    Projects,
-  },
-};
+export default {};
 </script>
 
 Projects

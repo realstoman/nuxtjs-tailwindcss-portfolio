@@ -9,7 +9,14 @@ export const state = () => ({
       title: "Google Health Platform",
       category: "Web Application",
       img: "images/web-project-2.jpg",
-      singleProjectData: [{}],
+      singleProjectData: [
+        {
+          id: 1,
+          singleProjectTitle: "Kabul Project Management UI",
+          singleProjectDate: "Jul 26, 2021",
+          singleProjectTag: "UI / Frontend",
+        },
+      ],
     },
   ],
 });

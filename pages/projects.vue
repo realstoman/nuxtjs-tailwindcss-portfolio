@@ -17,6 +17,9 @@
         {{ projectsDescription }}
       </p>
     </div>
+
+    <!-- Projects grid -->
+    <ProjectsGrid />
   </div>
 </template>
 
@@ -24,7 +27,9 @@
 import { mapState } from "vuex";
 export default {
   data: () => {
-    // Todo
+    return {
+      // Todo
+    };
   },
   computed: {
     ...mapState(["projectsHeading", "projectsDescription", "projectsData"]),
