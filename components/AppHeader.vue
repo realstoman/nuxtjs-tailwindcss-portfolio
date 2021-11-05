@@ -15,7 +15,9 @@
       <div class="flex justify-between items-center px-4 sm:px-0">
         <!-- Header logos start -->
         <div>
-          <AppLogoDark class="w-36" alt="Dark Logo" />
+          <NuxtLink to="/">
+            <AppLogoDark class="w-36" alt="Dark Logo" />
+          </NuxtLink>
         </div>
         <!-- Header logos end -->
 
@@ -180,7 +182,6 @@ export default {
 <style scoped>
 #nav a.router-link-exact-active {
   @apply text-indigo-700;
-  @apply dark:text-indigo-400;
   @apply font-medium;
 }
 </style>

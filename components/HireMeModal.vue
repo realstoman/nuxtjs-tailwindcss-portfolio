@@ -14,7 +14,7 @@
           z-20
         "
       ></div>
-      <!--          -->
+      <!--   Modal  -->
       <main class="flex flex-col items-center justify-center h-full w-full">
         <transition name="fade-up-down">
           <div v-show="modal" class="modal-wrapper flex items-center z-30">

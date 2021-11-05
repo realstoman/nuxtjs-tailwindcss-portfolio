@@ -1,5 +1,4 @@
 <template>
-  <
   <div
     :class="isOpen ? 'block' : 'hidden'"
     class="
@@ -15,7 +14,7 @@
       sm:shadow-none
     "
   >
-    <router-link
+    <NuxtLink
       to="/projects"
       class="
         block
@@ -30,9 +29,9 @@
         sm:py-2
       "
       aria-label="Projects"
-      >Projects</router-link
+      >Projects</NuxtLink
     >
-    <router-link
+    <NuxtLink
       to="/about"
       class="
         block
@@ -52,9 +51,9 @@
         dark:border-secondary-dark
       "
       aria-label="About Me"
-      >About Me</router-link
+      >About Me</NuxtLink
     >
-    <router-link
+    <NuxtLink
       to="/contact"
       class="
         block
@@ -74,7 +73,7 @@
         dark:border-secondary-dark
       "
       aria-label="Contact"
-      >Contact</router-link
+      >Contact</NuxtLink
     >
     <div
       class="
@@ -113,4 +112,4 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
