@@ -216,7 +216,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["showModal", "modal", "categories"],
+  data() {
+    return {};
+  },
+  methods: {},
+};
 </script>
 
 <style scoped>
