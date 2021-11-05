@@ -114,4 +114,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style>
+#nav .nuxt-link-exact-active,
+#nav .nuxt-link-active {
+  @apply text-indigo-700;
+  @apply font-medium;
+}
+</style>

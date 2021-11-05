@@ -147,7 +147,7 @@ export default {
   components: {
     HireMeModal,
   },
-  data() {
+  data: () => {
     return {
       isOpen: false,
       theme: "",
@@ -176,18 +176,10 @@ export default {
       ],
     };
   },
-
-  created() {
-    // this.theme = localStorage.getItem('theme') || 'light';
-  },
   mounted() {
     feather.replace();
-    // this.theme = localStorage.getItem('theme') || 'light';
   },
   methods: {
-    updateTheme(theme) {
-      this.theme = theme;
-    },
     showModal() {
       if (this.modal) {
         // Stop screen scrolling
@@ -209,9 +201,4 @@ export default {
 };
 </script>
 
-<style scoped>
-#nav a.router-link-exact-active {
-  @apply text-indigo-700;
-  @apply font-medium;
-}
-</style>
+<style></style>
