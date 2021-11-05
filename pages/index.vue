@@ -1,9 +1,18 @@
 <template>
   <div class="container mx-auto">
     <AppBanner />
+
+    <Projects />
   </div>
 </template>
 
 <script>
-export default {};
+import Projects from "./projects.vue";
+export default {
+  components: {
+    Projects,
+  },
+};
 </script>
+
+Projects
