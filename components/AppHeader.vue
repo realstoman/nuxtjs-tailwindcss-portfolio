@@ -102,7 +102,8 @@
         <!-- Hire me button end -->
 
         <!-- Theme switcher largr screen start -->
-        <div
+        <button
+          @click="themeSwticher"
           class="
             ml-8
             bg-primary-light
@@ -114,35 +115,23 @@
             cursor-pointer
           "
         >
-          <!-- <a href="#" aria-label="Theme Switcher">
-            <i
-              data-feather="moon"
-              class="
-                text-liText-ternary-dark
-                hover:text-gray-400
-                dark:text-liText-ternary-light
-                dark:hover:text-liBorder-primary-light
-                w-5
-              "
-            ></i>
-          </a> -->
-          <button @click="themeSwticher" class="">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              class="w-8 h-8"
-            >
-              <path
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              ></path>
-            </svg>
-          </button>
-        </div>
-
+          <i
+            v-if="$colorMode.value == 'dark'"
+            v-html="iconSvg"
+            class="text-gray-200 hover:text-gray-50 w-5"
+          ></i>
+          <i
+            v-else
+            v-html="iconSvg"
+            class="
+              text-liText-ternary-dark
+              hover:text-gray-400
+              dark:text-liText-ternary-light
+              dark:hover:text-liBorder-primary-light
+              w-5
+            "
+          ></i>
+        </button>
         <!-- Theme switcher largr screen end -->
       </div>
       <!-- Header right section buttons stendart -->
@@ -172,17 +161,27 @@ export default {
   data: () => {
     return {
       isOpen: false,
-      theme: "",
       modal: false,
+      icon: "moon",
     };
   },
+
   computed: {
     ...mapState(["categories"]),
+    iconSvg() {
+      return feather.toSvg(this.icon);
+    },
   },
   methods: {
     themeSwticher() {
       this.$colorMode.preference =
         this.$colorMode.value == "light" ? "dark" : "light";
+
+      if (this.icon == "moon") {
+        this.icon = "sun";
+      } else {
+        this.icon = "moon";
+      }
     },
     showModal() {
       if (this.modal) {
@@ -198,12 +197,6 @@ export default {
         this.modal = true;
       }
     },
-  },
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
   },
 };
 </script>
