@@ -8,7 +8,7 @@
         xl:max-w-screen-xl
         block
         sm:flex sm:justify-between sm:items-center
-        my-6
+        py-6
       "
     >
       <!-- Header menu links and small screen humberger menu start -->
@@ -16,7 +16,12 @@
         <!-- Header logos start -->
         <div>
           <NuxtLink to="/">
-            <AppLogoDark class="w-36" alt="Dark Logo" />
+            <AppLogoLight
+              v-if="this.$colorMode.value == 'dark'"
+              class="w-36"
+              alt="Dark Light"
+            />
+            <AppLogoDark v-else class="w-36" alt="Dark Logo" />
           </NuxtLink>
         </div>
         <!-- Header logos end -->
@@ -97,7 +102,8 @@
         <!-- Hire me button end -->
 
         <!-- Theme switcher largr screen start -->
-        <div
+        <button
+          @click="themeSwticher"
           class="
             ml-8
             bg-primary-light
@@ -109,19 +115,23 @@
             cursor-pointer
           "
         >
-          <a href="#" aria-label="Theme Switcher">
-            <i
-              data-feather="moon"
-              class="
-                text-liText-ternary-dark
-                hover:text-gray-400
-                dark:text-liText-ternary-light
-                dark:hover:text-liBorder-primary-light
-                w-5
-              "
-            ></i>
-          </a>
-        </div>
+          <i
+            v-if="$colorMode.value == 'dark'"
+            v-html="iconSvg"
+            class="text-gray-200 hover:text-gray-50 w-5"
+          ></i>
+          <i
+            v-else
+            v-html="iconSvg"
+            class="
+              text-liText-ternary-dark
+              hover:text-gray-400
+              dark:text-liText-ternary-light
+              dark:hover:text-liBorder-primary-light
+              w-5
+            "
+          ></i>
+        </button>
         <!-- Theme switcher largr screen end -->
       </div>
       <!-- Header right section buttons stendart -->
@@ -151,14 +161,28 @@ export default {
   data: () => {
     return {
       isOpen: false,
-      theme: "",
       modal: false,
+      icon: "moon",
     };
   },
+
   computed: {
     ...mapState(["categories"]),
+    iconSvg() {
+      return feather.toSvg(this.icon);
+    },
   },
   methods: {
+    themeSwticher() {
+      this.$colorMode.preference =
+        this.$colorMode.value == "light" ? "dark" : "light";
+
+      if (this.icon == "moon") {
+        this.icon = "sun";
+      } else {
+        this.icon = "moon";
+      }
+    },
     showModal() {
       if (this.modal) {
         // Stop screen scrolling
@@ -173,12 +197,6 @@ export default {
         this.modal = true;
       }
     },
-  },
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
   },
 };
 </script>

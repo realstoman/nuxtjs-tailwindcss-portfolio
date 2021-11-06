@@ -40,8 +40,8 @@
       </p>
       <div class="flex justify-center sm:block">
         <a
-          download="Stoman-Resume.pdf"
-          href="/files/Stoman-Resume.pdf"
+          href="/Stoman-Resume.pdf"
+          download=""
           class="
             flex
             justify-center
@@ -75,7 +75,8 @@
       </div>
     </div>
     <div class="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0">
-      <DeveloperLightIllustration />
+      <DeveloperDarkIllustration v-if="this.$colorMode.value == 'dark'" />
+      <DeveloperLightIllustration v-else />
     </div>
   </section>
 </template>

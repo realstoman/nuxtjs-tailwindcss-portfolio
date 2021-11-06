@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  scrollToTop: true,
   data: () => {
     return {
       // Todo

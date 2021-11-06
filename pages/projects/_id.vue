@@ -219,6 +219,7 @@
 <script>
 import feather from "feather-icons";
 export default {
+  scrollToTop: true,
   data: () => {
     return {
       // Todo

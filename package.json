@@ -16,6 +16,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@nuxtjs/color-mode": "^2.1.1",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "postcss": "^8.3.5",
     "vue-backtotop": "^1.6.1"
