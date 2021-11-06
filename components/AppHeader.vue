@@ -27,6 +27,37 @@
         <!-- Header logos end -->
 
         <!-- Theme switcher small screen start -->
+        <button
+          @click="themeSwticher"
+          class="
+            sm:hidden
+            ml-8
+            bg-primary-light
+            dark:bg-ternary-dark
+            px-3
+            py-2
+            shadow-sm
+            rounded-xl
+            cursor-pointer
+          "
+        >
+          <i
+            v-if="$colorMode.value == 'dark'"
+            v-html="iconSvg"
+            class="text-gray-200 hover:text-gray-50 w-5"
+          ></i>
+          <i
+            v-else
+            v-html="iconSvg"
+            class="
+              text-liText-ternary-dark
+              hover:text-gray-400
+              dark:text-liText-ternary-light
+              dark:hover:text-liBorder-primary-light
+              w-5
+            "
+          ></i>
+        </button>
         <!-- Theme switcher small screen end -->
 
         <!-- Small screen humberger menu start -->
