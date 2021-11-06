@@ -40,8 +40,8 @@
       </p>
       <div class="flex justify-center sm:block">
         <a
-          download="Stoman-Resume.pdf"
-          href="/files/Stoman-Resume.pdf"
+          href="/Stoman-Resume.pdf"
+          download=""
           class="
             flex
             justify-center
