@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-secondary-light dark:bg-primary-dark">
     <AppHeader />
     <transition name="fade" mode="out-in">
       <Nuxt />
