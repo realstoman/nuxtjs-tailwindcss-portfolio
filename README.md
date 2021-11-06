@@ -6,7 +6,7 @@ A simple portfolio starter theme built with Nuxt.js and TailwindCSS. This is the
 
 ## Demo URL
 
-[https://vuejs-tailwindcss-portfolio.netlify.com](https://vuejs-tailwindcss-portfolio.netlify.com)
+[https://nuxtjs-tailwindcss-portfolio.netlify.com](https://nuxtjs-tailwindcss-portfolio.netlify.com)
 
 ## Features
 
