@@ -75,7 +75,8 @@
       </div>
     </div>
     <div class="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0">
-      <DeveloperLightIllustration />
+      <DeveloperDarkIllustration v-if="this.$colorMode.value == 'dark'" />
+      <DeveloperLightIllustration v-else />
     </div>
   </section>
 </template>

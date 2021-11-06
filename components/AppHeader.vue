@@ -16,7 +16,12 @@
         <!-- Header logos start -->
         <div>
           <NuxtLink to="/">
-            <AppLogoDark class="w-36" alt="Dark Logo" />
+            <AppLogoLight
+              v-if="this.$colorMode.value == 'dark'"
+              class="w-36"
+              alt="Dark Light"
+            />
+            <AppLogoDark v-else class="w-36" alt="Dark Logo" />
           </NuxtLink>
         </div>
         <!-- Header logos end -->
