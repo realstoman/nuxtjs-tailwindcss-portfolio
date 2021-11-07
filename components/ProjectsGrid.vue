@@ -21,18 +21,31 @@
     <!-- Projects grid header en -->
 
     <!-- Filter and search projects start -->
-    <div class="flex justify-between mt-16">
+    <div
+      class="
+        flex
+        justify-between
+        mt-12
+        sm:mt-16
+        border-b border-primary-light
+        dark:border-secondary-dark
+        pb-3
+        gap-3
+      "
+    >
       <div class="">
         <input
           class="
             w-full
-            px-4
+            pl-3
+            pr-1
+            sm:px-4
             py-2
             border-1 border-gray-200
             dark:border-secondary-dark
             rounded-lg
-            text-md
-            dark:font-medium
+            text-sm
+            sm:text-md
             bg-secondary-light
             dark:bg-ternary-dark
             text-primary-dark
@@ -51,7 +64,7 @@
     <!-- Filter and search projects end -->
 
     <!-- Projects grid start -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 mt-8 sm:gap-10">
+    <div class="grid grid-cols-1 sm:grid-cols-3 mt-6 sm:gap-10">
       <div
         v-for="project in filteredProjects"
         :key="project.id"
