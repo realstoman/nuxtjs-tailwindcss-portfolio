@@ -20,10 +20,14 @@
     </div>
     <!-- Projects grid header en -->
 
+    <!-- Filter projects start -->
+    <ProjectsSelect @change="selectedProject = $event" />
+    <!-- Filter projects end -->
+
     <!-- Projects grid start -->
     <div class="grid grid-cols-1 sm:grid-cols-3 mt-16 sm:gap-10">
       <div
-        v-for="project in projects"
+        v-for="project in filteredProjects"
         :key="project.id"
         class="
           rounded-3xl
@@ -71,8 +75,22 @@
 import { mapState } from "vuex";
 
 export default {
+  data: () => {
+    return {
+      selectedProject: "",
+    };
+  },
   computed: {
     ...mapState(["projectsHeading", "projectsDescription", "projects"]),
+    filteredProjects() {
+      if (this.selectedProject) {
+        return this.projects.filter((el) => {
+          let category = el.category.toLowerCase();
+          return category.includes(this.selectedProject);
+        });
+      }
+      return this.projects;
+    },
   },
 };
 </script>
