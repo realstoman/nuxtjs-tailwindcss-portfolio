@@ -41,7 +41,10 @@
                   flex
                   justify-between
                   gap-10
-                  p-5
+                  pt-5
+                  pr-3
+                  pb-5
+                  pl-8
                   border-b border-ternary-light
                   dark:border-ternary-dark
                 "
@@ -51,14 +54,14 @@
                 </h5>
                 <button
                   class="
-                    px-4
+                    pr-2
                     font-bold
                     text-primary-dark
                     dark:text-primary-light
                   "
                   @click="showModal()"
                 >
-                  X
+                  <i data-feather="x" class="w-12"></i>
                 </button>
               </div>
               <div class="modal-body p-5 w-full h-full overflow-y-auto">
@@ -189,7 +192,7 @@
                   </div>
                 </form>
               </div>
-              <div class="modal-footer py-3 px-5 border0-t text-right">
+              <div class="modal-footer py-5 px-8 border0-t text-right">
                 <button
                   class="
                     px-6
@@ -216,12 +219,16 @@
 </template>
 
 <script>
+import feather from "feather-icons";
 export default {
   props: ["showModal", "modal", "categories"],
   data: () => {
     return {
       // Todo
     };
+  },
+  mounted() {
+    feather.replace();
   },
   methods: {},
 };
