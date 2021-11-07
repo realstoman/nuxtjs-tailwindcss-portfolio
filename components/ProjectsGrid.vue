@@ -84,8 +84,9 @@ export default {
     ...mapState(["projectsHeading", "projectsDescription", "projects"]),
     filteredProjects() {
       if (this.selectedProject) {
-        return this.projects.filter((el) => {
-          let category = el.category.toLowerCase();
+        return this.projects.filter((item) => {
+          let category =
+            item.category.charAt(0).toUpperCase() + item.category.slice(1);
           return category.includes(this.selectedProject);
         });
       }

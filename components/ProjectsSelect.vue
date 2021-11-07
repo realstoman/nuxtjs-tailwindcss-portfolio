@@ -24,7 +24,7 @@ export default {
       type: Array,
       default: () => [
         "Web Application",
-        "Mobile Applicaiton",
+        "Mobile Application",
         "UI/UX Design",
         "Branding",
       ],
