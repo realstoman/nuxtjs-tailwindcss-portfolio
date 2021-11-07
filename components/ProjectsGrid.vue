@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-15 sm:pt-24">
+  <div class="pt-10 sm:pt-24">
     <!-- Projects grid header start -->
     <div class="text-center">
       <p
@@ -14,16 +14,59 @@
       >
         {{ projectsHeading }}
       </p>
-      <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
+      <p class="text-lg sm:text-xl text-gray-500 dark:text-ternary-light">
         {{ projectsDescription }}
       </p>
     </div>
     <!-- Projects grid header en -->
 
+    <!-- Filter and search projects start -->
+    <div
+      class="
+        flex
+        justify-between
+        mt-12
+        sm:mt-16
+        border-b border-primary-light
+        dark:border-secondary-dark
+        pb-3
+        gap-3
+      "
+    >
+      <div class="">
+        <input
+          class="
+            w-full
+            pl-3
+            pr-1
+            sm:px-4
+            py-2
+            border-1 border-gray-200
+            dark:border-secondary-dark
+            rounded-lg
+            text-sm
+            sm:text-md
+            bg-secondary-light
+            dark:bg-ternary-dark
+            text-primary-dark
+            dark:text-ternary-light
+          "
+          id="name"
+          name="name"
+          type="text"
+          required=""
+          placeholder="Search Projects"
+          aria-label="Name"
+        />
+      </div>
+      <ProjectsSelect @change="selectedProject = $event" />
+    </div>
+    <!-- Filter and search projects end -->
+
     <!-- Projects grid start -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 mt-16 sm:gap-10">
+    <div class="grid grid-cols-1 sm:grid-cols-3 mt-6 sm:gap-10">
       <div
-        v-for="project in projects"
+        v-for="project in filteredProjects"
         :key="project.id"
         class="
           rounded-3xl
@@ -71,8 +114,23 @@
 import { mapState } from "vuex";
 
 export default {
+  data: () => {
+    return {
+      selectedProject: "",
+    };
+  },
   computed: {
     ...mapState(["projectsHeading", "projectsDescription", "projects"]),
+    filteredProjects() {
+      if (this.selectedProject) {
+        return this.projects.filter((item) => {
+          let category =
+            item.category.charAt(0).toUpperCase() + item.category.slice(1);
+          return category.includes(this.selectedProject);
+        });
+      }
+      return this.projects;
+    },
   },
 };
 </script>

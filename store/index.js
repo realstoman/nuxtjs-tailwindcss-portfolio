@@ -251,7 +251,7 @@ export const state = () => ({
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdy",
       title: "Project Management UI",
-      category: "UI / Frontend",
+      category: "UI/UX Design",
       img: "images/ui-project-1.jpg",
       publishDate: "Nov 04, 2021",
       tag: "UI / Frontend",
@@ -373,7 +373,7 @@ export const state = () => ({
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8ccc99",
       title: "Cloud Storage Platform",
-      category: "UI / Database",
+      category: "UI/UX Design",
       img: "images/ui-project-2.jpg",
       publishDate: "Nov 04, 2021",
       tag: "Web / Frontend",

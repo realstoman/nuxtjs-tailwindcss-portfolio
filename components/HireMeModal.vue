@@ -41,27 +41,37 @@
                   flex
                   justify-between
                   gap-10
-                  p-5
+                  pt-5
+                  pr-3
+                  pb-5
+                  pl-8
                   border-b border-ternary-light
                   dark:border-ternary-dark
                 "
               >
-                <h5 class="text-primary-dark dark:text-primary-light text-2xl">
+                <h5
+                  class="
+                    text-primary-dark
+                    dark:text-primary-light
+                    text-lg
+                    md:text-2xl
+                  "
+                >
                   What project are you looking for?
                 </h5>
                 <button
                   class="
-                    px-4
+                    pr-2
                     font-bold
                     text-primary-dark
                     dark:text-primary-light
                   "
                   @click="showModal()"
                 >
-                  X
+                  <i data-feather="x" class="w-12"></i>
                 </button>
               </div>
-              <div class="modal-body p-5 w-full h-full overflow-y-auto">
+              <div class="modal-body p-5 w-full h-full">
                 <form class="max-w-xl m-4 text-left">
                   <div class="">
                     <input
@@ -168,17 +178,20 @@
                     ></textarea>
                   </div>
 
-                  <div class="mt-6">
+                  <div class="mt-6 pb-4 sm:pb-1">
                     <button
                       class="
-                        px-6
-                        py-2.5
+                        px-4
+                        sm:px-6
+                        py-2
+                        sm:py-2.5
                         text-white
-                        font-medium
-                        tracking-wider
+                        font-normal
+                        sm:font-medium
                         bg-indigo-500
                         hover:bg-indigo-600
-                        rounded-lg
+                        rounded-md
+                        sm:rounded-lg
                         focus:ring-1 focus:ring-indigo-900
                       "
                       type="submit"
@@ -189,15 +202,20 @@
                   </div>
                 </form>
               </div>
-              <div class="modal-footer py-3 px-5 border0-t text-right">
+              <div
+                class="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right"
+              >
                 <button
                   class="
-                    px-6
+                    px-4
+                    sm:px-6
                     py-2
                     bg-indigo-400
                     hover:bg-indigo-500
-                    rounded-lg
-                    font-bold
+                    rounded-md
+                    sm:rounded-lg
+                    font-normal
+                    sm:font-bold
                     text-primary-light
                     focus:ring-1 focus:ring-indigo-900
                   "
@@ -216,12 +234,16 @@
 </template>
 
 <script>
+import feather from "feather-icons";
 export default {
   props: ["showModal", "modal", "categories"],
   data: () => {
     return {
       // Todo
     };
+  },
+  mounted() {
+    feather.replace();
   },
   methods: {},
 };

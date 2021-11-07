@@ -21,9 +21,10 @@
           bg-indigo-500
           hover:bg-indigo-600
           focus:ring-1 focus:ring-indigo-900
-          text-white text-lg
+          text-white text-md
           sm:text-xl
-          font-medium
+          font-normal
+          sm:font-medium
         "
         aria-label="More Projects"
         >More Projects</NuxtLink

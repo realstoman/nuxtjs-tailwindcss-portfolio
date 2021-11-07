@@ -117,7 +117,7 @@ export default {
 <style>
 #nav .nuxt-link-exact-active,
 #nav .nuxt-link-active {
-  @apply text-indigo-700;
+  @apply text-indigo-700 dark:text-indigo-400;
   @apply font-medium;
 }
 </style>
