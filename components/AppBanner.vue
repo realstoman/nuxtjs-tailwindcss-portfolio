@@ -27,7 +27,7 @@
       <p
         class="
           mt-4
-          text-2xml
+          text-xl
           sm:text-4xl
           text-center
           sm:text-left
@@ -74,7 +74,7 @@
         >
       </div>
     </div>
-    <div class="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0">
+    <div class="w-full sm:w-2/3 text-right float-right mt-4 sm:mt-0">
       <DeveloperDarkIllustration v-if="this.$colorMode.value == 'dark'" />
       <DeveloperLightIllustration v-else />
     </div>

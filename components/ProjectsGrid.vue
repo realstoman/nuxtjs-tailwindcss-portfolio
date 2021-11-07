@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-15 sm:pt-24">
+  <div class="pt-10 sm:pt-24">
     <!-- Projects grid header start -->
     <div class="text-center">
       <p
@@ -14,7 +14,7 @@
       >
         {{ projectsHeading }}
       </p>
-      <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
+      <p class="text-lg sm:text-xl text-gray-500 dark:text-ternary-light">
         {{ projectsDescription }}
       </p>
     </div>
