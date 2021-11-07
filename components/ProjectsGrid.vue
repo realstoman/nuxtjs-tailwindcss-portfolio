@@ -20,12 +20,38 @@
     </div>
     <!-- Projects grid header en -->
 
-    <!-- Filter projects start -->
-    <ProjectsSelect @change="selectedProject = $event" />
-    <!-- Filter projects end -->
+    <!-- Filter and search projects start -->
+    <div class="flex justify-between mt-16">
+      <div class="">
+        <input
+          class="
+            w-full
+            px-4
+            py-2
+            border-1 border-gray-200
+            dark:border-secondary-dark
+            rounded-lg
+            text-md
+            dark:font-medium
+            bg-secondary-light
+            dark:bg-ternary-dark
+            text-primary-dark
+            dark:text-ternary-light
+          "
+          id="name"
+          name="name"
+          type="text"
+          required=""
+          placeholder="Search Projects"
+          aria-label="Name"
+        />
+      </div>
+      <ProjectsSelect @change="selectedProject = $event" />
+    </div>
+    <!-- Filter and search projects end -->
 
     <!-- Projects grid start -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 mt-16 sm:gap-10">
+    <div class="grid grid-cols-1 sm:grid-cols-3 mt-8 sm:gap-10">
       <div
         v-for="project in filteredProjects"
         :key="project.id"
