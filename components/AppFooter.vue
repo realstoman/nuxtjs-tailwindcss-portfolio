@@ -53,7 +53,19 @@
       <!-- Footer copyright start -->
       <div class="flex justify-center items-center text-center">
         <div class="text-lg text-ternary-dark dark:text-ternary-light">
-          &copy; Copyright {{ copyrightDate }}. Vue.js & TailwindCSS Portfolio.
+          &copy; Copyright {{ copyrightDate }}.
+          <a
+            href="https://github.com/NangialaiStoman/nuxtjs-tailwindcss-portfolio"
+            target="__blank"
+            class="
+              text-secondary-dark
+              dark:text-secondary-light
+              font-medium
+              hover:underline
+            "
+            >Nuxt.js & TailwindCSS Portfolio</a
+          >
+          .
           <a
             href="https://stoman.me"
             target="__blank"
