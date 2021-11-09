@@ -21,12 +21,12 @@
     <!-- Projects grid header en -->
 
     <!-- Filter and search projects start -->
-    <div class="mt-12 sm:mt-16">
+    <div class="mt-10 sm:mt-16">
       <h3
         class="
           text-center text-secondary-dark
           dark:text-ternary-light
-          text-lg
+          text-md
           sm:text-xl
           font-normal
           mb-3
@@ -44,30 +44,49 @@
           gap-3
         "
       >
-        <input
-          v-model="searchProject"
-          class="
-            pl-3
-            pr-1
-            sm:px-4
-            py-2
-            border-1 border-gray-200
-            dark:border-secondary-dark
-            rounded-lg
-            text-sm
-            sm:text-md
-            bg-secondary-light
-            dark:bg-ternary-dark
-            text-primary-dark
-            dark:text-ternary-light
-          "
-          id="name"
-          name="name"
-          type="text"
-          required=""
-          placeholder="Search Projects"
-          aria-label="Name"
-        />
+        <div class="flex justify-between gap-2">
+          <span
+            class="
+              hidden
+              sm:block
+              bg-primary-light
+              dark:bg-ternary-dark
+              p-2.5
+              shadow-sm
+              rounded-xl
+              cursor-pointer
+            "
+          >
+            <i
+              data-feather="search"
+              class="text-ternary-dark dark:text-ternary-light"
+            ></i>
+          </span>
+          <input
+            v-model="searchProject"
+            class="
+              pl-3
+              pr-1
+              sm:px-4
+              py-2
+              border-1 border-gray-200
+              dark:border-secondary-dark
+              rounded-lg
+              text-sm
+              sm:text-md
+              bg-secondary-light
+              dark:bg-ternary-dark
+              text-primary-dark
+              dark:text-ternary-light
+            "
+            id="name"
+            name="name"
+            type="search"
+            required=""
+            placeholder="Search Projects"
+            aria-label="Name"
+          />
+        </div>
         <ProjectsFilter @change="selectedProject = $event" />
       </div>
     </div>
@@ -122,6 +141,7 @@
 
 <script>
 import { mapState } from "vuex";
+import feather from "feather-icons";
 
 export default {
   data: () => {
@@ -153,6 +173,9 @@ export default {
       let project = new RegExp(this.searchProject, "i");
       return this.projects.filter((el) => el.title.match(project));
     },
+  },
+  mounted() {
+    feather.replace();
   },
 };
 </script>
