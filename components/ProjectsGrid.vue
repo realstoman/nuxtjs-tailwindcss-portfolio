@@ -21,45 +21,74 @@
     <!-- Projects grid header en -->
 
     <!-- Filter and search projects start -->
-    <div
-      class="
-        flex
-        justify-between
-        mt-12
-        sm:mt-16
-        border-b border-primary-light
-        dark:border-secondary-dark
-        pb-3
-        gap-3
-      "
-    >
-      <div class="">
-        <input
-          class="
-            w-full
-            pl-3
-            pr-1
-            sm:px-4
-            py-2
-            border-1 border-gray-200
-            dark:border-secondary-dark
-            rounded-lg
-            text-sm
-            sm:text-md
-            bg-secondary-light
-            dark:bg-ternary-dark
-            text-primary-dark
-            dark:text-ternary-light
-          "
-          id="name"
-          name="name"
-          type="text"
-          required=""
-          placeholder="Search Projects"
-          aria-label="Name"
-        />
+    <div class="mt-10 sm:mt-16">
+      <h3
+        class="
+          text-center text-secondary-dark
+          dark:text-ternary-light
+          text-md
+          sm:text-xl
+          font-normal
+          mb-3
+        "
+      >
+        Search projects by title or filter by category
+      </h3>
+      <div
+        class="
+          flex
+          justify-between
+          border-b border-primary-light
+          dark:border-secondary-dark
+          pb-3
+          gap-3
+        "
+      >
+        <div class="flex justify-between gap-2">
+          <span
+            class="
+              hidden
+              sm:block
+              bg-primary-light
+              dark:bg-ternary-dark
+              p-2.5
+              shadow-sm
+              rounded-xl
+              cursor-pointer
+            "
+          >
+            <i
+              data-feather="search"
+              class="text-ternary-dark dark:text-ternary-light"
+            ></i>
+          </span>
+          <input
+            v-model="searchProject"
+            class="
+              pl-3
+              pr-1
+              sm:px-4
+              py-2
+              border-1 border-gray-200
+              dark:border-secondary-dark
+              rounded-lg
+              text-sm
+              sm:text-md
+              bg-secondary-light
+              dark:bg-ternary-dark
+              text-primary-dark
+              dark:text-ternary-light
+            "
+            id="name"
+            name="name"
+            type="search"
+            required=""
+            placeholder="Search Projects"
+            aria-label="Name"
+          />
+        </div>
+        <ProjectsFilter @change="selectedProject = $event" />
       </div>
-      <ProjectsSelect @change="selectedProject = $event" />
     </div>
     <!-- Filter and search projects end -->
 
@@ -112,25 +141,41 @@
 
 <script>
 import { mapState } from "vuex";
+import feather from "feather-icons";
 
 export default {
   data: () => {
     return {
       selectedProject: "",
+      searchProject: "",
     };
   },
   computed: {
     ...mapState(["projectsHeading", "projectsDescription", "projects"]),
     filteredProjects() {
       if (this.selectedProject) {
-        return this.projects.filter((item) => {
-          let category =
-            item.category.charAt(0).toUpperCase() + item.category.slice(1);
-          return category.includes(this.selectedProject);
-        });
+        return this.filterProjectsByCategory();
+      } else if (this.searchProject) {
+        return this.filterProjectsBySearch();
       }
       return this.projects;
     },
+  },
+  methods: {
+    filterProjectsByCategory() {
+      return this.projects.filter((item) => {
+        let category =
+          item.category.charAt(0).toUpperCase() + item.category.slice(1);
+        return category.includes(this.selectedProject);
+      });
+    },
+    filterProjectsBySearch() {
+      let project = new RegExp(this.searchProject, "i");
+      return this.projects.filter((el) => el.title.match(project));
+    },
+  },
+  mounted() {
+    feather.replace();
   },
 };
 </script>

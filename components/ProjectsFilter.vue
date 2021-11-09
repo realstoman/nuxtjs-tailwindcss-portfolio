@@ -5,7 +5,6 @@
       :name="select"
       :id="select"
       class="
-        w-full
         px-4
         sm:px-6
         py-2

@@ -2,7 +2,7 @@
 
 A simple portfolio starter theme built with Nuxt.js and TailwindCSS. This is the Nuxt version of the [Vuejs-&-TailwindCSS-Portfolio](https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio)
 
-![Vuejs-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/137613185-4e94cf76-002b-4f7e-8d9b-f452c97cadf2.PNG)
+![Nuxtjs-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/140901794-14c1db27-99b9-46d4-a954-4bb37c32ead4.JPG)
 
 ## Demo URL
 
@@ -14,10 +14,11 @@ A simple portfolio starter theme built with Nuxt.js and TailwindCSS. This is the
 - [Nuxt.js](https://nuxtjs.org) with [Vuex](https://vuex.vuejs.org/)
 - [Tailwind CSS v2](https://tailwindcss.com)
 - Theme Switcher with Dark Mode
-- Vuex Store
+- Vuex
+- Projects filter by category
+- Projects search by title
 - Vue transitions
 - Counter
-- Projects filter by category
 - Projects carousel
 - Vue.js smooth scroll
 - Dynamic forms
