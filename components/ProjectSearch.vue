@@ -1,6 +1,7 @@
 <template>
   <div>
     <input
+      @change="$emit('change', $event.target.value)"
       class="
         w-full
         pl-3
