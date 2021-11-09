@@ -33,33 +33,8 @@
         gap-3
       "
     >
-      <div class="">
-        <input
-          class="
-            w-full
-            pl-3
-            pr-1
-            sm:px-4
-            py-2
-            border-1 border-gray-200
-            dark:border-secondary-dark
-            rounded-lg
-            text-sm
-            sm:text-md
-            bg-secondary-light
-            dark:bg-ternary-dark
-            text-primary-dark
-            dark:text-ternary-light
-          "
-          id="name"
-          name="name"
-          type="text"
-          required=""
-          placeholder="Search Projects"
-          aria-label="Name"
-        />
-      </div>
-      <ProjectsSelect @change="selectedProject = $event" />
+      <ProjectSearch v-model="searchProject" />
+      <ProjectsFilter @change="selectedProject = $event" />
     </div>
     <!-- Filter and search projects end -->
 
@@ -117,6 +92,7 @@ export default {
   data: () => {
     return {
       selectedProject: "",
+      searchProject: "",
     };
   },
   computed: {
@@ -130,6 +106,10 @@ export default {
         });
       }
       return this.projects;
+    },
+    searchProjects() {
+      let project = new RegExp(this.searchProject, "i");
+      return this.ratingsInfo.filter((el) => el.title.match(project));
     },
   },
 };
