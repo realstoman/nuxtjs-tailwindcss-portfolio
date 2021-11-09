@@ -49,11 +49,13 @@
       <!-- About me single counter start -->
       <div class="mb-20 sm:mb-0">
         <span
-          text-4xl
-          font-bold
-          text-secondary-dark
-          dark:text-secondary-light
-          mb-2
+          class="
+            text-4xl
+            font-bold
+            text-secondary-dark
+            dark:text-secondary-light
+            mb-2
+          "
           >32</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
