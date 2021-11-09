@@ -21,45 +21,55 @@
     <!-- Projects grid header en -->
 
     <!-- Filter and search projects start -->
-    <div
-      class="
-        flex
-        justify-between
-        mt-12
-        sm:mt-16
-        border-b border-primary-light
-        dark:border-secondary-dark
-        pb-3
-        gap-3
-      "
-    >
-      <!-- <ProjectSearch @keyup="searchProject = $event" /> -->
-      <input
-        v-model="searchProject"
+    <div class="mt-12 sm:mt-16">
+      <h3
         class="
-          w-full
-          pl-3
-          pr-1
-          sm:px-4
-          py-2
-          border-1 border-gray-200
-          dark:border-secondary-dark
-          rounded-lg
-          text-sm
-          sm:text-md
-          bg-secondary-light
-          dark:bg-ternary-dark
-          text-primary-dark
+          text-center text-secondary-dark
           dark:text-ternary-light
+          text-lg
+          sm:text-xl
+          font-normal
+          mb-3
         "
-        id="name"
-        name="name"
-        type="text"
-        required=""
-        placeholder="Search Projects"
-        aria-label="Name"
-      />
-      <ProjectsFilter @change="selectedProject = $event" />
+      >
+        Search projects by title or filter by category
+      </h3>
+      <div
+        class="
+          flex
+          justify-between
+          border-b border-primary-light
+          dark:border-secondary-dark
+          pb-3
+          gap-3
+        "
+      >
+        <input
+          v-model="searchProject"
+          class="
+            pl-3
+            pr-1
+            sm:px-4
+            py-2
+            border-1 border-gray-200
+            dark:border-secondary-dark
+            rounded-lg
+            text-sm
+            sm:text-md
+            bg-secondary-light
+            dark:bg-ternary-dark
+            text-primary-dark
+            dark:text-ternary-light
+          "
+          id="name"
+          name="name"
+          type="text"
+          required=""
+          placeholder="Search Projects"
+          aria-label="Name"
+        />
+        <ProjectsFilter @change="selectedProject = $event" />
+      </div>
     </div>
     <!-- Filter and search projects end -->
 
