@@ -2,7 +2,7 @@
 
 A simple portfolio starter theme built with Nuxt.js and TailwindCSS. This is the Nuxt version of the [Vuejs-&-TailwindCSS-Portfolio](https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio)
 
-![Vuejs-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/137613185-4e94cf76-002b-4f7e-8d9b-f452c97cadf2.PNG)
+![Nuxtjs-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/140901064-dff68988-b541-49db-88f7-6621ccf392c1.JPG)
 
 ## Demo URL
 
