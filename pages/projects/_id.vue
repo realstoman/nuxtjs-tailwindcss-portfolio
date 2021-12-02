@@ -201,6 +201,9 @@
           </p>
         </div>
       </div>
+
+      <!-- Project related projects -->
+      <ProjectRelatedProjects />
     </div>
 
     <!-- Load not found components if no project found -->
