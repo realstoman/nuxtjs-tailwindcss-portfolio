@@ -13,7 +13,8 @@
       <h1
         class="
           text-3xl
-          sm:text-5xl
+          sm:text-4xl
+          xl:text-5xl
           text-center
           sm:text-left
           font-semibold
@@ -27,8 +28,9 @@
       <p
         class="
           mt-4
-          text-xl
-          sm:text-4xl
+          text-2xml
+          sm:text-3xl
+          xl:text-4xl
           text-center
           sm:text-left
           font-semibold
@@ -57,7 +59,7 @@
             py-2.5
             sm:py-3
             shadow-lg
-            rounded-xl
+            rounded-lg
             bg-indigo-50
             focus:ring-1 focus:ring-indigo-900
             hover:bg-indigo-500
