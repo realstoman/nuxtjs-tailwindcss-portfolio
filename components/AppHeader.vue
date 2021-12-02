@@ -27,7 +27,7 @@
 
         <!-- Theme switcher small screen -->
         <button
-          @click="themeSwticher"
+          @click="themeSwitcher"
           class="
             sm:hidden
             ml-8
@@ -130,7 +130,7 @@
 
         <!-- Theme switcher large screen -->
         <button
-          @click="themeSwticher"
+          @click="themeSwitcher"
           class="
             ml-8
             bg-primary-light
@@ -196,14 +196,14 @@ export default {
     },
   },
   methods: {
-    themeSwticher() {
+    themeSwitcher() {
       this.$colorMode.preference =
         this.$colorMode.value == "light" ? "dark" : "light";
 
-      if (this.icon == "moon") {
-        this.icon = "sun";
-      } else {
+      if (this.icon == "sun") {
         this.icon = "moon";
+      } else {
+        this.icon = "sun";
       }
     },
     showModal() {
