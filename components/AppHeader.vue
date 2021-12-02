@@ -1,6 +1,6 @@
 <template>
   <nav id="nav" class="sm:container sm:mx-auto">
-    <!-- Header start -->
+    <!-- Header -->
     <div
       class="
         z-10
@@ -11,9 +11,9 @@
         py-6
       "
     >
-      <!-- Header menu links and small screen humberger menu start -->
+      <!-- Header menu links and small screen hamburger menu -->
       <div class="flex justify-between items-center px-6 sm:px-0">
-        <!-- Header logos start -->
+        <!-- Header logos -->
         <div>
           <NuxtLink to="/">
             <AppLogoLight
@@ -24,11 +24,10 @@
             <AppLogoDark v-else class="w-36" alt="Dark Logo" />
           </NuxtLink>
         </div>
-        <!-- Header logos end -->
 
-        <!-- Theme switcher small screen start -->
+        <!-- Theme switcher small screen -->
         <button
-          @click="themeSwticher"
+          @click="themeSwitcher"
           class="
             sm:hidden
             ml-8
@@ -59,15 +58,14 @@
             "
           ></i>
         </button>
-        <!-- Theme switcher small screen end -->
 
-        <!-- Small screen humberger menu start -->
+        <!-- Small screen hamburger menu -->
         <div class="sm:hidden">
           <button
             @click="isOpen = !isOpen"
-            type="buttom"
+            type="button"
             class="focus:outline-none"
-            aria-label="Humberger Menu"
+            aria-label="Hamburger Menu"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,24 +93,21 @@
             </svg>
           </button>
         </div>
-        <!-- Small screen humberger menu end -->
       </div>
-      <!-- Header menu links and small screen humberger menu end -->
 
-      <!-- Header links start -->
+      <!-- Header links -->
       <AppNavigation
         :isOpen="isOpen"
         :showModal="showModal"
         :modal="modal"
         :categories="categories"
       />
-      <!-- Header links end -->
 
-      <!-- Header right section buttons start -->
+      <!-- Header right section buttons -->
       <div
         class="hidden sm:flex justify-between items-center flex-col md:flex-row"
       >
-        <!-- Hire me button start -->
+        <!-- Hire me button -->
         <div>
           <button
             class="
@@ -122,7 +117,7 @@
               hover:bg-indigo-600
               text-white
               shadow-sm
-              rounded-lg
+              rounded-md
               px-5
               py-2.5
             "
@@ -132,26 +127,25 @@
             Hire Me
           </button>
         </div>
-        <!-- Hire me button end -->
 
-        <!-- Theme switcher largr screen start -->
+        <!-- Theme switcher large screen -->
         <button
-          @click="themeSwticher"
+          @click="themeSwitcher"
           class="
-            ml-8
+            sm:ml-6
             bg-primary-light
             dark:bg-ternary-dark
-            px-3
+            px-2
             py-2
             shadow-sm
-            rounded-xl
+            rounded-lg
             cursor-pointer
           "
         >
           <i
             v-if="$colorMode.value == 'dark'"
             v-html="iconSvg"
-            class="text-gray-200 hover:text-gray-50 w-5"
+            class="text-gray-200 hover:text-gray-50 w-4 h-4"
           ></i>
           <i
             v-else
@@ -161,24 +155,21 @@
               hover:text-gray-400
               dark:text-liText-ternary-light
               dark:hover:text-liBorder-primary-light
-              w-5
+              w-4
+              h-4
             "
           ></i>
         </button>
-        <!-- Theme switcher largr screen end -->
       </div>
-      <!-- Header right section buttons stendart -->
     </div>
-    <!-- Header end -->
 
-    <!-- Hire me modal start -->
+    <!-- Hire me modal -->
     <HireMeModal
       :showModal="showModal"
       :modal="modal"
       :categories="categories"
       aria-modal="Hire Me Modal"
     />
-    <!-- Hire me modal end -->
   </nav>
 </template>
 
@@ -206,14 +197,14 @@ export default {
     },
   },
   methods: {
-    themeSwticher() {
+    themeSwitcher() {
       this.$colorMode.preference =
         this.$colorMode.value == "light" ? "dark" : "light";
 
-      if (this.icon == "moon") {
-        this.icon = "sun";
-      } else {
+      if (this.icon == "sun") {
         this.icon = "moon";
+      } else {
+        this.icon = "sun";
       }
     },
     showModal() {

@@ -8,9 +8,10 @@
         py-20
         block
         sm:flex sm:justify-between sm:items-center
+        text-center
       "
     >
-      <!-- About me single counter start -->
+      <!-- About me single counter -->
       <div class="mb-20 sm:mb-0">
         <span
           class="
@@ -26,9 +27,8 @@
           >Years of experience</span
         >
       </div>
-      <!-- About me single counter end -->
 
-      <!-- About me single counter start -->
+      <!-- About me single counter -->
       <div class="mb-20 sm:mb-0">
         <span
           class="
@@ -44,9 +44,8 @@
           >Stars on GitHub</span
         >
       </div>
-      <!-- About me single counter end -->
 
-      <!-- About me single counter start -->
+      <!-- About me single counter -->
       <div class="mb-20 sm:mb-0">
         <span
           class="
@@ -62,9 +61,8 @@
           >Positive feedback</span
         >
       </div>
-      <!-- About me single counter end -->
 
-      <!-- About me single counter start -->
+      <!-- About me single counter -->
       <div class="mb-20 sm:mb-0">
         <span
           class="
@@ -80,9 +78,7 @@
           >Projects completed</span
         >
       </div>
-      <!-- About me single counter end -->
     </div>
-    <!-- About me counters end -->
   </div>
 </template>
 

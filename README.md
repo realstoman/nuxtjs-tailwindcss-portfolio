@@ -14,13 +14,13 @@ A simple portfolio starter theme built with Nuxt.js and TailwindCSS. This is the
 - [Nuxt.js](https://nuxtjs.org) with [Vuex](https://vuex.vuejs.org/)
 - [Tailwind CSS v2](https://tailwindcss.com)
 - Theme Switcher with Dark Mode
-- Vuex
+- Vuex for state management
 - Projects filter by category
 - Projects search by title
 - Vue transitions
 - Counter
 - Projects carousel
-- Vue.js smooth scroll
+- Smooth scroll
 - Dynamic forms
 - Back to top button
 - Download file button
@@ -31,7 +31,7 @@ A simple portfolio starter theme built with Nuxt.js and TailwindCSS. This is the
 
 - [Download it from nodejs.org](https://nodejs.org)
 - [Install it using NVM ](https://github.com/nvm-sh/nvm)
-- If you're on Mac, install it with Homebrew:
+- If you're on Mac, Homebrew is a good option too:
 
 ```
 brew install node

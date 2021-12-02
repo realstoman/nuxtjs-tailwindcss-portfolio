@@ -1,6 +1,6 @@
 <template>
   <div class="pt-10 sm:pt-24">
-    <!-- Projects grid header start -->
+    <!-- Projects grid header -->
     <div class="text-center">
       <p
         class="
@@ -14,13 +14,13 @@
       >
         {{ projectsHeading }}
       </p>
-      <p class="text-lg sm:text-xl text-gray-500 dark:text-ternary-light">
+      <!-- Note: This description is commented out, but if you want to see it, just uncomment this -->
+      <!-- <p class="text-lg sm:text-xl text-gray-500 dark:text-ternary-light">
         {{ projectsDescription }}
-      </p>
+      </p> -->
     </div>
-    <!-- Projects grid header en -->
 
-    <!-- Filter and search projects start -->
+    <!-- Filter and search projects -->
     <div class="mt-10 sm:mt-16">
       <h3
         class="
@@ -90,15 +90,14 @@
         <ProjectsFilter @change="selectedProject = $event" />
       </div>
     </div>
-    <!-- Filter and search projects end -->
 
-    <!-- Projects grid start -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 mt-6 sm:gap-10">
+    <!-- Projects grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
       <div
         v-for="project in filteredProjects"
         :key="project.id"
         class="
-          rounded-3xl
+          rounded-xl
           shadow-lg
           hover:shadow-xl
           cursor-pointer
@@ -114,7 +113,7 @@
             <img
               :src="project.img"
               :alt="project.title"
-              class="rounded-t-3xl border-none"
+              class="rounded-xl border-none"
             />
           </div>
           <div class="text-center px-4 py-6">
@@ -135,7 +134,6 @@
         </NuxtLink>
       </div>
     </div>
-    <!-- Projects grid End -->
   </div>
 </template>
 

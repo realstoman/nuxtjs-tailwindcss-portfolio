@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
     <div v-show="modal" class="fixed inset-0 z-30">
-      <!-- background -->
+      <!-- Modal body background as backdrop -->
       <div
         v-show="modal"
         @click="showModal()"
@@ -14,7 +14,7 @@
           z-20
         "
       ></div>
-      <!--   Modal  -->
+      <!-- Modal contents -->
       <main class="flex flex-col items-center justify-center h-full w-full">
         <transition name="fade-up-down">
           <div v-show="modal" class="modal-wrapper flex items-center z-30">
@@ -31,7 +31,6 @@
                 max-h-screen
                 shadow-lg
                 flex-row
-                rounded-xl
                 relative
               "
             >
@@ -68,11 +67,18 @@
                   "
                   @click="showModal()"
                 >
-                  <i data-feather="x" class="w-12"></i>
+                  <i data-feather="x" class="w-8 sm:w-12"></i>
                 </button>
               </div>
               <div class="modal-body p-5 w-full h-full">
-                <form class="max-w-xl m-4 text-left">
+                <form
+                  @submit="
+                    (e) => {
+                      e.preventDefault;
+                    }
+                  "
+                  class="max-w-xl m-4 text-left"
+                >
                   <div class="">
                     <input
                       class="
@@ -81,7 +87,7 @@
                         py-2
                         border-1 border-gray-200
                         dark:border-secondary-dark
-                        rounded-lg
+                        rounded-md
                         text-md
                         dark:font-medium
                         bg-secondary-light
@@ -105,7 +111,7 @@
                         py-2
                         border-1 border-gray-200
                         dark:border-secondary-dark
-                        rounded-lg
+                        rounded-md
                         text-md
                         dark:font-medium
                         bg-secondary-light
@@ -129,7 +135,7 @@
                         py-2
                         border-1 border-gray-200
                         dark:border-secondary-dark
-                        rounded-lg
+                        rounded-md
                         text-md
                         dark:font-medium
                         bg-secondary-light
@@ -161,7 +167,7 @@
                         py-2
                         border-1 border-gray-200
                         dark:border-secondary-dark
-                        rounded-lg
+                        rounded-md
                         text-md
                         dark:font-medium
                         bg-secondary-light
@@ -191,7 +197,6 @@
                         bg-indigo-500
                         hover:bg-indigo-600
                         rounded-md
-                        sm:rounded-lg
                         focus:ring-1 focus:ring-indigo-900
                       "
                       type="submit"
@@ -210,13 +215,15 @@
                     px-4
                     sm:px-6
                     py-2
-                    bg-indigo-400
-                    hover:bg-indigo-500
+                    bg-gray-600
+                    text-primary-light
+                    hover:bg-ternary-dark
+                    dark:bg-gray-200
+                    dark:text-secondary-dark
+                    dark:hover:bg-primary-light
                     rounded-md
-                    sm:rounded-lg
                     font-normal
                     sm:font-bold
-                    text-primary-light
                     focus:ring-1 focus:ring-indigo-900
                   "
                   @click="showModal()"

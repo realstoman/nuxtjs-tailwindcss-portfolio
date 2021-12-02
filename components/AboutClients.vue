@@ -1,4 +1,5 @@
 <template>
+  <!-- About clients section -->
   <div class="mt-10 sm:mt-20">
     <p
       class="

@@ -1,7 +1,13 @@
 <template>
+  <!-- Contact form -->
   <div class="w-full sm:w-1/2">
     <div class="leading-loose">
       <form
+        @submit="
+          (e) => {
+            e.preventDefault;
+          }
+        "
         class="
           max-w-xl
           m-4
@@ -9,7 +15,7 @@
           sm:p-10
           bg-secondary-light
           dark:bg-secondary-dark
-          rounded-xl
+          rounded-lg
           shadow-xl
           text-left
         "

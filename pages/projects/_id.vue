@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-auto">
-    <!-- Check if there are projects, if there are, then load -->
+    <!-- Check if there are projects and then load -->
     <div v-if="project">
-      <!-- Project heading and meta info start -->
+      <!-- Project heading and meta info -->
       <div>
         <p
           class="
@@ -51,9 +51,8 @@
           </div>
         </div>
       </div>
-      <!-- Project heading and meta info end -->
 
-      <!-- Project gallery start -->
+      <!-- Project gallery -->
       <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
         <div
           class="mb-10 sm:mb-0"
@@ -62,17 +61,16 @@
         >
           <img
             :src="projectImage.img"
-            class="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
+            class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
           />
         </div>
       </div>
-      <!-- Project gallery end -->
 
-      <!-- Project info start -->
+      <!-- Project info -->
       <div class="block sm:flex gap-0 sm:gap-10 mt-14">
-        <!-- Single project left section details start -->
+        <!-- Single project left section details -->
         <div class="w-full sm:w-1/3 text-left">
-          <!-- Single project client details start -->
+          <!-- Single project client details -->
           <div class="mb-7">
             <p
               class="
@@ -105,9 +103,8 @@
               </li>
             </ul>
           </div>
-          <!-- Single project client details end -->
 
-          <!-- Single project objectives start -->
+          <!-- Single project objectives -->
           <div class="mb-7">
             <p
               class="
@@ -124,9 +121,8 @@
               {{ project.objectivesDetails }}
             </p>
           </div>
-          <!-- Single project objectives end -->
 
-          <!-- Single project technologies start -->
+          <!-- Single project technologies -->
           <div class="mb-7">
             <p
               class="
@@ -143,9 +139,8 @@
               {{ project.technologies.join(", ") }}
             </p>
           </div>
-          <!-- Single project technologies end -->
 
-          <!-- Single project social sharing start -->
+          <!-- Single project social sharing -->
           <div>
             <p
               class="
@@ -175,21 +170,22 @@
                   rounded-lg
                   shadow-sm
                 "
-                ><i :data-feather="social.icon" class="w-5 h-5"></i
+                ><i
+                  :data-feather="social.icon"
+                  class="w-4 lg:w-5 h-4 lg:h-5"
+                ></i
               ></a>
             </div>
           </div>
-          <!-- Single project social sharing end -->
         </div>
-        <!-- Single project left section details end -->
 
-        <!-- Single project right section details start -->
+        <!-- Single project right section details -->
         <div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
           <p
             class="
               text-primary-dark
               dark:text-primary-light
-              text-2xl
+              text-xl
               font-bold
               mb-7
             "
@@ -204,14 +200,15 @@
             {{ projectDetail.details }}
           </p>
         </div>
-        <!-- Single project right section details end -->
       </div>
-      <!-- Project info end -->
+
+      <!-- Project related projects -->
+      <ProjectRelatedProjects />
     </div>
 
     <!-- Load not found components if no project found -->
     <div v-else class="container mx-auto text-center">
-      <h1>Not projects yet</h1>
+      <h1>No projects yet</h1>
     </div>
   </div>
 </template>

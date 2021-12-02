@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "nuxtjs-tailwindcss-portfolio",
+    title: "Stoman Portfolio",
     htmlAttrs: {
       lang: "en",
     },

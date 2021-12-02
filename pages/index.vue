@@ -1,13 +1,13 @@
 <template>
   <div class="container mx-auto">
-    <!-- Import app banner -->
+    <!-- App banner -->
     <AppBanner />
 
-    <!-- Import projects grid -->
+    <!-- Projects grid -->
     <ProjectsGrid />
 
-    <!-- View more projects start -->
-    <div class="mt-10 sm:mt-20 flex justify-center">
+    <!-- View more projects button -->
+    <div class="mt-5 sm:mt-14 flex justify-center">
       <NuxtLink
         to="/projects"
         class="
@@ -15,14 +15,14 @@
           items-center
           px-6
           py-3
-          rounded-xl
+          rounded-lg
           shadow-lg
           hover:shadow-xl
           bg-indigo-500
           hover:bg-indigo-600
           focus:ring-1 focus:ring-indigo-900
           text-white text-md
-          sm:text-xl
+          sm:text-
           font-normal
           sm:font-medium
         "
@@ -30,7 +30,6 @@
         >More Projects</NuxtLink
       >
     </div>
-    <!-- View more projects end -->
   </div>
 </template>
 

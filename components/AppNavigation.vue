@@ -1,4 +1,5 @@
 <template>
+  <!-- App header navigation links -->
   <div
     :class="isOpen ? 'block' : 'hidden'"
     class="
@@ -19,7 +20,7 @@
       class="
         block
         text-left text-lg
-        font-medium
+        font-thin
         text-primary-dark
         dark:text-ternary-light
         hover:text-secondary-dark
@@ -36,7 +37,7 @@
       class="
         block
         text-left text-lg
-        font-medium
+        font-thin
         text-primary-dark
         dark:text-ternary-light
         hover:text-secondary-dark
@@ -58,7 +59,7 @@
       class="
         block
         text-left text-lg
-        font-medium
+        font-thin
         text-primary-dark
         dark:text-ternary-light
         hover:text-secondary-dark
@@ -89,7 +90,7 @@
           sm:hidden
           block
           text-left text-md
-          font-medium
+          font-thin
           bg-indigo-500
           hover:bg-indigo-600
           text-white
@@ -118,6 +119,6 @@ export default {
 #nav .nuxt-link-exact-active,
 #nav .nuxt-link-active {
   @apply text-indigo-700 dark:text-indigo-400;
-  @apply font-medium;
+  @apply font-normal;
 }
 </style>

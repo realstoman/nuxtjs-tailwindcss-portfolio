@@ -1,12 +1,12 @@
 <template>
   <div>
-    <!-- Import about me -->
+    <!-- About me -->
     <AboutMe class="container mx-auto" />
 
-    <!-- Import about counter -->
+    <!-- About counter -->
     <AboutCounter />
 
-    <!-- Import about clients -->
+    <!-- About clients -->
     <AboutClients class="container mx-auto" />
   </div>
 </template>
