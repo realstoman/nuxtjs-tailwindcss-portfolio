@@ -2,7 +2,6 @@
   <div class="container mx-auto">
     <div
       class="
-        innercontent
         pt-20
         sm:pt-30
         pb-8
@@ -53,7 +52,7 @@
       <!-- Footer copyright start -->
       <div class="flex justify-center items-center text-center">
         <div class="text-lg text-ternary-dark dark:text-ternary-light">
-          &copy; Copyright {{ copyrightDate }}.
+          &copy; {{ copyrightDate }}.
           <a
             href="https://github.com/NangialaiStoman/nuxtjs-tailwindcss-portfolio"
             target="__blank"

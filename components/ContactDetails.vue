@@ -16,7 +16,7 @@
         <li class="flex" v-for="contact in contacts" :key="contact.id">
           <i
             :data-feather="contact.icon"
-            class="w-5 text-gray-500 dark:text-gray-400 mr-4"
+            class="w-6 text-gray-500 dark:text-gray-400 mr-4"
           ></i>
           <a
             href="#"

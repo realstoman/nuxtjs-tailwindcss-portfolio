@@ -15,14 +15,14 @@
           items-center
           px-6
           py-3
-          rounded-xl
+          rounded-lg
           shadow-lg
           hover:shadow-xl
           bg-indigo-500
           hover:bg-indigo-600
           focus:ring-1 focus:ring-indigo-900
           text-white text-md
-          sm:text-xl
+          sm:text-
           font-normal
           sm:font-medium
         "

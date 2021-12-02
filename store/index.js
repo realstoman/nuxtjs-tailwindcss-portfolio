@@ -770,6 +770,12 @@ export const state = () => ({
     },
     {
       id: uuidv4(),
+      name: "Medium",
+      icon: "book",
+      url: "https://stoman.medium.com",
+    },
+    {
+      id: uuidv4(),
       name: "Instagram",
       icon: "instagram",
       url: "https://instagram.com/NangialaiStoman",
