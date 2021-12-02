@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-auto">
-    <!-- Check if there are projects, if there are, then load -->
+    <!-- Check if there are projects and then load -->
     <div v-if="project">
-      <!-- Project heading and meta info start -->
+      <!-- Project heading and meta info -->
       <div>
         <p
           class="
@@ -51,9 +51,8 @@
           </div>
         </div>
       </div>
-      <!-- Project heading and meta info end -->
 
-      <!-- Project gallery start -->
+      <!-- Project gallery -->
       <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
         <div
           class="mb-10 sm:mb-0"
@@ -66,13 +65,12 @@
           />
         </div>
       </div>
-      <!-- Project gallery end -->
 
-      <!-- Project info start -->
+      <!-- Project info -->
       <div class="block sm:flex gap-0 sm:gap-10 mt-14">
-        <!-- Single project left section details start -->
+        <!-- Single project left section details -->
         <div class="w-full sm:w-1/3 text-left">
-          <!-- Single project client details start -->
+          <!-- Single project client details -->
           <div class="mb-7">
             <p
               class="
@@ -105,9 +103,8 @@
               </li>
             </ul>
           </div>
-          <!-- Single project client details end -->
 
-          <!-- Single project objectives start -->
+          <!-- Single project objectives -->
           <div class="mb-7">
             <p
               class="
@@ -124,9 +121,8 @@
               {{ project.objectivesDetails }}
             </p>
           </div>
-          <!-- Single project objectives end -->
 
-          <!-- Single project technologies start -->
+          <!-- Single project technologies -->
           <div class="mb-7">
             <p
               class="
@@ -143,9 +139,8 @@
               {{ project.technologies.join(", ") }}
             </p>
           </div>
-          <!-- Single project technologies end -->
 
-          <!-- Single project social sharing start -->
+          <!-- Single project social sharing -->
           <div>
             <p
               class="
@@ -182,11 +177,9 @@
               ></a>
             </div>
           </div>
-          <!-- Single project social sharing end -->
         </div>
-        <!-- Single project left section details end -->
 
-        <!-- Single project right section details start -->
+        <!-- Single project right section details -->
         <div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
           <p
             class="
@@ -207,9 +200,7 @@
             {{ projectDetail.details }}
           </p>
         </div>
-        <!-- Single project right section details end -->
       </div>
-      <!-- Project info end -->
     </div>
 
     <!-- Load not found components if no project found -->

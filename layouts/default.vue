@@ -1,11 +1,17 @@
 <template>
   <div class="bg-secondary-light dark:bg-primary-dark">
+    <!-- App header -->
     <AppHeader />
+
+    <!-- Render contents with transition -->
     <transition name="fade" mode="out-in">
       <Nuxt />
     </transition>
+
+    <!-- App footer -->
     <AppFooter />
-    <!-- Go back to top when scrolled to some part -->
+
+    <!-- Go back to top when scrolled down -->
     <div
       class="
         flex

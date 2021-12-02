@@ -1,9 +1,9 @@
 <template>
   <div class="container mx-auto sm:flex py-4 sm:py-10 mt-6 sm:mt-20">
-    <!-- Import contact form -->
+    <!-- Contact form -->
     <ContactForm />
 
-    <!-- Import contact details -->
+    <!-- Contact details -->
     <ContactDetails :contacts="contacts" />
   </div>
 </template>

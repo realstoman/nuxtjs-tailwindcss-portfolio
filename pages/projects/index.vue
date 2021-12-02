@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <!-- Import projects grid -->
+    <!-- Projects grid -->
     <ProjectsGrid />
   </div>
 </template>
