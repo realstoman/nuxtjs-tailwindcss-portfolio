@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
     <div v-show="modal" class="fixed inset-0 z-30">
-      <!-- background -->
+      <!-- Modal body background as backdrop -->
       <div
         v-show="modal"
         @click="showModal()"
@@ -14,7 +14,7 @@
           z-20
         "
       ></div>
-      <!--   Modal  -->
+      <!-- Modal contents -->
       <main class="flex flex-col items-center justify-center h-full w-full">
         <transition name="fade-up-down">
           <div v-show="modal" class="modal-wrapper flex items-center z-30">

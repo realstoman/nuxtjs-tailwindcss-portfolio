@@ -9,6 +9,7 @@
       sm:mt-2
     "
   >
+    <!-- Banner left contents -->
     <div class="w-full sm:w-1/3 text-left">
       <h1
         class="
@@ -76,6 +77,8 @@
         >
       </div>
     </div>
+
+    <!-- Banner right illustration -->
     <div class="w-full sm:w-2/3 text-right float-right mt-4 sm:mt-0">
       <DeveloperDarkIllustration v-if="this.$colorMode.value == 'dark'" />
       <DeveloperLightIllustration v-else />

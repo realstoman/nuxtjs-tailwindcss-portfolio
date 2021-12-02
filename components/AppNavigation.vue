@@ -1,4 +1,5 @@
 <template>
+  <!-- App header navigation links -->
   <div
     :class="isOpen ? 'block' : 'hidden'"
     class="

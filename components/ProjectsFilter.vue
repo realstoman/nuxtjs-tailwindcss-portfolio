@@ -1,4 +1,5 @@
 <template>
+  <!-- Project filter select -->
   <div>
     <select
       @change="$emit('change', $event.target.value)"

@@ -1,4 +1,5 @@
 <template>
+  <!-- About single client -->
   <div>
     <img
       :src="client.img"

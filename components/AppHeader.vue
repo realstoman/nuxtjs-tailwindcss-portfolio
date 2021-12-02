@@ -1,6 +1,6 @@
 <template>
   <nav id="nav" class="sm:container sm:mx-auto">
-    <!-- Header start -->
+    <!-- Header -->
     <div
       class="
         z-10
@@ -11,9 +11,9 @@
         py-6
       "
     >
-      <!-- Header menu links and small screen humberger menu start -->
+      <!-- Header menu links and small screen hamburger menu -->
       <div class="flex justify-between items-center px-6 sm:px-0">
-        <!-- Header logos start -->
+        <!-- Header logos -->
         <div>
           <NuxtLink to="/">
             <AppLogoLight
@@ -24,9 +24,8 @@
             <AppLogoDark v-else class="w-36" alt="Dark Logo" />
           </NuxtLink>
         </div>
-        <!-- Header logos end -->
 
-        <!-- Theme switcher small screen start -->
+        <!-- Theme switcher small screen -->
         <button
           @click="themeSwticher"
           class="
@@ -59,15 +58,14 @@
             "
           ></i>
         </button>
-        <!-- Theme switcher small screen end -->
 
-        <!-- Small screen humberger menu start -->
+        <!-- Small screen hamburger menu -->
         <div class="sm:hidden">
           <button
             @click="isOpen = !isOpen"
-            type="buttom"
+            type="button"
             class="focus:outline-none"
-            aria-label="Humberger Menu"
+            aria-label="Hamburger Menu"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,24 +93,21 @@
             </svg>
           </button>
         </div>
-        <!-- Small screen humberger menu end -->
       </div>
-      <!-- Header menu links and small screen humberger menu end -->
 
-      <!-- Header links start -->
+      <!-- Header links -->
       <AppNavigation
         :isOpen="isOpen"
         :showModal="showModal"
         :modal="modal"
         :categories="categories"
       />
-      <!-- Header links end -->
 
-      <!-- Header right section buttons start -->
+      <!-- Header right section buttons -->
       <div
         class="hidden sm:flex justify-between items-center flex-col md:flex-row"
       >
-        <!-- Hire me button start -->
+        <!-- Hire me button -->
         <div>
           <button
             class="
@@ -132,9 +127,8 @@
             Hire Me
           </button>
         </div>
-        <!-- Hire me button end -->
 
-        <!-- Theme switcher largr screen start -->
+        <!-- Theme switcher large screen -->
         <button
           @click="themeSwticher"
           class="
@@ -165,20 +159,16 @@
             "
           ></i>
         </button>
-        <!-- Theme switcher largr screen end -->
       </div>
-      <!-- Header right section buttons stendart -->
     </div>
-    <!-- Header end -->
 
-    <!-- Hire me modal start -->
+    <!-- Hire me modal -->
     <HireMeModal
       :showModal="showModal"
       :modal="modal"
       :categories="categories"
       aria-modal="Hire Me Modal"
     />
-    <!-- Hire me modal end -->
   </nav>
 </template>
 

@@ -1,4 +1,5 @@
 <template>
+  <!-- Scroll to top -->
   <transition name="fade">
     <div
       v-show="isScrolled"
