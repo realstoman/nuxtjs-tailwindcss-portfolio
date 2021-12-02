@@ -175,7 +175,10 @@
                   rounded-lg
                   shadow-sm
                 "
-                ><i :data-feather="social.icon" class="w-5 h-5"></i
+                ><i
+                  :data-feather="social.icon"
+                  class="w-4 lg:w-5 h-4 lg:h-5"
+                ></i
               ></a>
             </div>
           </div>
