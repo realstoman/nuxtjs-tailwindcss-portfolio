@@ -98,7 +98,7 @@
         v-for="project in filteredProjects"
         :key="project.id"
         class="
-          rounded-3xl
+          rounded-xl
           shadow-lg
           hover:shadow-xl
           cursor-pointer
@@ -114,7 +114,7 @@
             <img
               :src="project.img"
               :alt="project.title"
-              class="rounded-t-3xl border-none"
+              class="rounded-xl border-none"
             />
           </div>
           <div class="text-center px-4 py-6">

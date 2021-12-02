@@ -122,7 +122,7 @@
               hover:bg-indigo-600
               text-white
               shadow-sm
-              rounded-lg
+              rounded-md
               px-5
               py-2.5
             "

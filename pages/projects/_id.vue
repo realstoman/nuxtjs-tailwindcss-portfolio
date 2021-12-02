@@ -62,7 +62,7 @@
         >
           <img
             :src="projectImage.img"
-            class="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
+            class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
           />
         </div>
       </div>
@@ -189,7 +189,7 @@
             class="
               text-primary-dark
               dark:text-primary-light
-              text-2xl
+              text-xl
               font-bold
               mb-7
             "
@@ -211,7 +211,7 @@
 
     <!-- Load not found components if no project found -->
     <div v-else class="container mx-auto text-center">
-      <h1>Not projects yet</h1>
+      <h1>No projects yet</h1>
     </div>
   </div>
 </template>
