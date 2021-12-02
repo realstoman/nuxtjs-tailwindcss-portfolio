@@ -132,20 +132,20 @@
         <button
           @click="themeSwitcher"
           class="
-            ml-8
+            sm:ml-6
             bg-primary-light
             dark:bg-ternary-dark
-            px-3
+            px-2
             py-2
             shadow-sm
-            rounded-xl
+            rounded-lg
             cursor-pointer
           "
         >
           <i
             v-if="$colorMode.value == 'dark'"
             v-html="iconSvg"
-            class="text-gray-200 hover:text-gray-50 w-5"
+            class="text-gray-200 hover:text-gray-50 w-4 h-4"
           ></i>
           <i
             v-else
@@ -155,7 +155,8 @@
               hover:text-gray-400
               dark:text-liText-ternary-light
               dark:hover:text-liBorder-primary-light
-              w-5
+              w-4
+              h-4
             "
           ></i>
         </button>
