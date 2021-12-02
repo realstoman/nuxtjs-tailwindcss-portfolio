@@ -10,9 +10,10 @@
         border border-ternary-light
         dark:border-ternary-dark
         shadow-sm
-        rounded-xl
+        rounded-lg
         mb-8
         cursor-pointer
+        dark:bg-secondary-light
       "
     />
   </div>

@@ -8,6 +8,7 @@
         py-20
         block
         sm:flex sm:justify-between sm:items-center
+        text-center
       "
     >
       <!-- About me single counter start -->
