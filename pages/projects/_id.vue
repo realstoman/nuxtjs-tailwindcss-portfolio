@@ -86,7 +86,7 @@
             <ul class="leading-loose">
               <li
                 v-for="info in project.companyInfos"
-                :key="info"
+                :key="info.id"
                 class="text-ternary-dark dark:text-ternary-light"
               >
                 <span>{{ info.title }}: </span>
