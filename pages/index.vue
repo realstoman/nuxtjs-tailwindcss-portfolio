@@ -34,7 +34,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  scrollToTop: true,
+};
 </script>
 
 <style scoped></style>

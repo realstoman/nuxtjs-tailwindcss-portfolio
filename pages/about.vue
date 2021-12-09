@@ -16,7 +16,7 @@ import feather from "feather-icons";
 
 export default {
   name: "About",
-
+  scrollToTop: true,
   mounted() {
     feather.replace();
   },
