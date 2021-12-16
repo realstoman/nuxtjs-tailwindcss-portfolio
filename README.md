@@ -46,7 +46,7 @@ npm install --global yarn
 3. ##### Clone the repo:
 
 ```
-git clone https://github.com/realstoman/nuxtjs-tailwindcss-portfolio
+git clone https://github.com/realstoman/nuxtjs-tailwindcss-portfolio.git
 ```
 
 4. ##### Open the project folder:
