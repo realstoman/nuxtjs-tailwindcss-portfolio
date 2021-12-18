@@ -53,7 +53,7 @@
         <div class="text-lg text-ternary-dark dark:text-ternary-light">
           &copy; {{ copyrightDate }}.
           <a
-            href="https://github.com/NangialaiStoman/nuxtjs-tailwindcss-portfolio"
+            href="https://github.com/realstoman/nuxtjs-tailwindcss-portfolio"
             target="__blank"
             class="
               text-secondary-dark

@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-10 sm:pt-24">
+  <div class="pt-10 sm:pt-20 md:pt-24">
     <!-- Projects grid header -->
     <div class="text-center">
       <p

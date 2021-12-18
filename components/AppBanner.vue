@@ -6,15 +6,15 @@
       items-center
       sm:flex-row
       mt-12
-      sm:mt-2
+      md:mt-2
     "
   >
     <!-- Banner left contents -->
-    <div class="w-full sm:w-1/3 text-left">
+    <div class="w-full md:w-1/3 text-left">
       <h1
         class="
           text-3xl
-          sm:text-4xl
+          md:text-4xl
           xl:text-5xl
           text-center
           sm:text-left
@@ -29,8 +29,8 @@
       <p
         class="
           mt-4
-          text-2xml
-          sm:text-3xl
+          text-2xl
+          md:text-3xl
           xl:text-4xl
           text-center
           sm:text-left
@@ -79,7 +79,7 @@
     </div>
 
     <!-- Banner right illustration -->
-    <div class="w-full sm:w-2/3 text-right float-right mt-4 sm:mt-0">
+    <div class="w-full md:w-2/3 text-right float-right mt-4 sm:mt-0">
       <DeveloperDarkIllustration v-if="this.$colorMode.value == 'dark'" />
       <DeveloperLightIllustration v-else />
     </div>

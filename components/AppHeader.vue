@@ -131,7 +131,7 @@
         class="hidden sm:flex justify-between items-center flex-col md:flex-row"
       >
         <!-- Hire me button -->
-        <div>
+        <div class="hidden md:block">
           <button
             class="
               text-md

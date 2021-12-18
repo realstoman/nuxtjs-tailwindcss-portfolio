@@ -1,6 +1,6 @@
 <template>
   <!-- Contact details -->
-  <div class="w-full sm:w-1/2">
+  <div class="w-full md:w-1/2">
     <div class="text-left max-w-xl px-6">
       <h2
         class="

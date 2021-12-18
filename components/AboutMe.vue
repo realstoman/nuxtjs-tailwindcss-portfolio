@@ -1,5 +1,5 @@
 <template>
-  <div class="block sm:flex sm:gap-10 mt-10 sm:mt-20">
+  <div class="block sm:flex sm:gap-4 md:gap-8 mt-10 md:mt-20">
     <!-- About me portfolio image -->
     <div class="w-full sm:w-1/4 mb-7 sm:mb-0">
       <img src="~/static/profile.jpeg" class="rounded-lg w-96" alt="" />
