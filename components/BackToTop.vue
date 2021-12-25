@@ -6,7 +6,6 @@
       class="
         transition
         duration-500
-        ease-in-out
         transform
         hover:-translate-y-1 hover:scale-110
         rounded-full
@@ -59,7 +58,10 @@ export default {
       this.userScrollPosition = window.scrollY;
     },
     backToTop() {
-      window.scrollTo(0, 0);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     },
   },
 };
