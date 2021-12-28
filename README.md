@@ -1,6 +1,6 @@
 # Nuxt.js & TailwindCSS Portfolio - With Dark Mode
 
-A simple portfolio starter theme built with Nuxt.js and TailwindCSS. This is the Nuxt version of the [Vuejs-&-TailwindCSS-Portfolio](https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio)
+A simple portfolio starter theme built with Nuxt.js and TailwindCSS. This is the Nuxt version of the [Vuejs-&-TailwindCSS-Portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio)
 
 ![Nuxtjs-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/140901794-14c1db27-99b9-46d4-a954-4bb37c32ead4.JPG)
 
