@@ -780,12 +780,6 @@ export const state = () => ({
       icon: "instagram",
       url: "https://instagram.com/realstoman",
     },
-    {
-      id: uuidv4(),
-      name: "Behance",
-      icon: "feather",
-      url: "https://behance.net/realstoman",
-    },
   ],
   categories: [
     {
