@@ -21,17 +21,17 @@ export const state = () => ({
       projectImages: [
         {
           id: uuidv4(),
-          title: "Kabul Project Management UI",
+          title: "Uber Project Management UI",
           img: "../images/ui-project-1.jpg",
         },
         {
           id: uuidv4(),
-          title: "Kabul Project Management UI",
+          title: "Uber Project Management UI",
           img: "../images/web-project-1.jpg",
         },
         {
           id: uuidv4(),
-          title: "Kabul Project Management UI",
+          title: "Uber Project Management UI",
           img: "../images/web-project-2.jpg",
         },
       ],
@@ -470,7 +470,7 @@ export const state = () => ({
     },
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdm",
-      title: "Kabul Social App",
+      title: "Uber Social App",
       category: "Mobile Application",
       img: "images/mobile-project-1.jpg",
       publishDate: "Nov 04, 2021",
@@ -485,17 +485,17 @@ export const state = () => ({
       projectImages: [
         {
           id: uuidv4(),
-          title: "Kabul Social App",
+          title: "Uber Social App",
           img: "../images/web-project-1.jpg",
         },
         {
           id: uuidv4(),
-          title: "Kabul Social App",
+          title: "Uber Social App",
           img: "../images/web-project-2.jpg",
         },
         {
           id: uuidv4(),
-          title: "Kabul Social App",
+          title: "Uber Social App",
           img: "../images/mobile-project-2.jpg",
         },
       ],

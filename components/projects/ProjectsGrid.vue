@@ -157,13 +157,14 @@ export default {
             <img
               :src="project.img"
               :alt="project.title"
-              class="rounded-xl border-none"
+              class="rounded-t-xl border-none"
             />
           </div>
           <div class="text-center px-4 py-6">
             <p
               class="
-                text-2xl text-ternary-dark
+                font-general-semibold
+                text-xl text-ternary-dark
                 dark:text-ternary-light
                 font-semibold
                 mb-2
@@ -171,9 +172,14 @@ export default {
             >
               {{ project.title }}
             </p>
-            <span class="text-lg text-ternary-dark dark:text-ternary-light">{{
-              project.category
-            }}</span>
+            <span
+              class="
+                font-general-medium
+                text-lg text-ternary-dark
+                dark:text-ternary-light
+              "
+              >{{ project.category }}</span
+            >
           </div>
         </NuxtLink>
       </div>
