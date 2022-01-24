@@ -18,7 +18,7 @@ export default {
           font-general-medium
           text-2xl text-primary-dark
           dark:text-primary-light
-          mt-12
+          mt-8
           mb-8
         "
       >
