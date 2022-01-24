@@ -239,7 +239,7 @@
 <script>
 import { mapState } from "vuex";
 // import feather from "feather-icons";
-import HireMeModal from "./HireMeModal.vue";
+import HireMeModal from "../HireMeModal.vue";
 
 export default {
   components: {

@@ -34,8 +34,10 @@
 </template>
 
 <script>
+import AppBanner from "../components/shared/AppBanner.vue";
 export default {
   scrollToTop: true,
+  components: { AppBanner },
 };
 </script>
 
