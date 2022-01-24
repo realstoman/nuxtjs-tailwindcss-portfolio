@@ -1,3 +1,9 @@
+<script>
+export default {
+  props: ["isOpen", "showModal", "modal", "categories"],
+};
+</script>
+
 <template>
   <!-- App header navigation links -->
   <div
@@ -103,12 +109,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  props: ["isOpen", "showModal", "modal", "categories"],
-};
-</script>
 
 <style>
 #nav .nuxt-link-exact-active,

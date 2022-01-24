@@ -1,3 +1,46 @@
+<script>
+import { mapState } from "vuex";
+import HireMeModal from "../HireMeModal.vue";
+import AppNavigation from "./AppNavigation.vue";
+
+export default {
+  components: {
+    HireMeModal,
+    AppNavigation,
+  },
+  data: () => {
+    return {
+      isOpen: false,
+      modal: false,
+    };
+  },
+
+  computed: {
+    ...mapState(["categories"]),
+  },
+  methods: {
+    themeSwitcher() {
+      this.$colorMode.preference =
+        this.$colorMode.value == "light" ? "dark" : "light";
+    },
+    showModal() {
+      if (this.modal) {
+        // Stop screen scrolling
+        document
+          .getElementsByTagName("html")[0]
+          .classList.remove("overflow-y-hidden");
+        this.modal = false;
+      } else {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.add("overflow-y-hidden");
+        this.modal = true;
+      }
+    },
+  },
+};
+</script>
+
 <template>
   <nav id="nav" class="sm:container sm:mx-auto">
     <!-- Header -->
@@ -16,12 +59,19 @@
         <!-- Header logos -->
         <div>
           <NuxtLink to="/">
-            <AppLogoLight
+            <img
               v-if="this.$colorMode.value == 'dark'"
+              src="~/static/logo-light.svg"
               class="w-36"
-              alt="Dark Light"
+              alt="Light Logo"
             />
-            <AppLogoDark v-else class="w-36" alt="Dark Logo" />
+
+            <img
+              v-else
+              src="~/static/logo-dark.svg"
+              alt="Color Logo"
+              class="w-36"
+            />
           </NuxtLink>
         </div>
 
@@ -203,24 +253,6 @@
               d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
             />
           </svg>
-
-          <!-- <i
-            v-if="$colorMode.value == 'dark'"
-            v-html="iconSvg"
-            class="text-gray-200 hover:text-gray-50 w-4 h-4"
-          ></i> -->
-          <!-- <i
-            v-else
-            v-html="iconSvg"
-            class="
-              text-liText-ternary-dark
-              hover:text-gray-400
-              dark:text-liText-ternary-light
-              dark:hover:text-liBorder-primary-light
-              w-4
-              h-4
-            "
-          ></i> -->
         </button>
       </div>
     </div>
@@ -234,58 +266,3 @@
     />
   </nav>
 </template>
-
-<script>
-import { mapState } from "vuex";
-// import feather from "feather-icons";
-import HireMeModal from "../HireMeModal.vue";
-import AppNavigation from "./AppNavigation.vue";
-
-export default {
-  components: {
-    HireMeModal,
-    AppNavigation,
-  },
-  data: () => {
-    return {
-      isOpen: false,
-      modal: false,
-    };
-  },
-
-  computed: {
-    ...mapState(["categories"]),
-    // iconSvg() {
-    //   return feather.toSvg(this.icon);
-    // },
-  },
-  methods: {
-    themeSwitcher() {
-      this.$colorMode.preference =
-        this.$colorMode.value == "light" ? "dark" : "light";
-
-      // if (this.icon == "sun") {
-      //   this.icon = "moon";
-      // } else {
-      //   this.icon = "sun";
-      // }
-    },
-    showModal() {
-      if (this.modal) {
-        // Stop screen scrolling
-        document
-          .getElementsByTagName("html")[0]
-          .classList.remove("overflow-y-hidden");
-        this.modal = false;
-      } else {
-        document
-          .getElementsByTagName("html")[0]
-          .classList.add("overflow-y-hidden");
-        this.modal = true;
-      }
-    },
-  },
-};
-</script>
-
-<style></style>
