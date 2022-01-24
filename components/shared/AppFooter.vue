@@ -1,3 +1,26 @@
+<script>
+import { mapState } from "vuex";
+import feather from "feather-icons";
+import FooterCopyright from "./FooterCopyright.vue";
+export default {
+  components: { FooterCopyright },
+  data: () => {
+    return {
+      // Todo
+    };
+  },
+  computed: {
+    ...mapState(["copyrightDate", "socialProfiles"]),
+  },
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
+  },
+};
+</script>
+
 <template>
   <div class="container mx-auto">
     <div
@@ -11,12 +34,12 @@
       "
     >
       <!-- Footer social links -->
-      <div class="flex flex-col justify-center items-center mb-12 sm:mb-28">
+      <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
         <p
           class="
+            font-general-semibold
             text-3xl
             sm:text-4xl
-            font-semibold
             text-primary-dark
             dark:text-primary-light
             mb-5
@@ -39,8 +62,9 @@
               bg-gray-50
               dark:bg-ternary-dark
               hover:bg-gray-100
-              shadow-sm∫
+              shadow-sm
               p-4
+              duration-500
             "
           >
             <i :data-feather="social.icon" class="w-6 sm:w-8 h-6 sm:h-8"></i>
@@ -49,58 +73,9 @@
       </div>
 
       <!-- Footer copyright -->
-      <div class="flex justify-center items-center text-center">
-        <div class="text-lg text-ternary-dark dark:text-ternary-light">
-          &copy; {{ copyrightDate }}.
-          <a
-            href="https://github.com/realstoman/nuxtjs-tailwindcss-portfolio"
-            target="__blank"
-            class="
-              text-secondary-dark
-              dark:text-secondary-light
-              font-medium
-              hover:underline
-            "
-            >Nuxt.js & TailwindCSS Portfolio</a
-          >
-          .
-          <a
-            href="https://stoman.me"
-            target="__blank"
-            class="
-              text-secondary-dark
-              dark:text-secondary-light
-              font-medium
-              uppercase
-              hover:underline
-            "
-            >Stoman</a
-          >
-        </div>
-      </div>
+      <FooterCopyright />
     </div>
   </div>
 </template>
-
-<script>
-import { mapState } from "vuex";
-import feather from "feather-icons";
-export default {
-  data: () => {
-    return {
-      // Todo
-    };
-  },
-  computed: {
-    ...mapState(["copyrightDate", "socialProfiles"]),
-  },
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
-  },
-};
-</script>
 
 <style scoped></style>

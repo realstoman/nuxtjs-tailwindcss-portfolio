@@ -1,3 +1,22 @@
+<script>
+import feather from "feather-icons";
+
+export default {
+  data: () => {
+    return {
+      // Todo
+    };
+  },
+
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
+  },
+};
+</script>
+
 <template>
   <section
     class="
@@ -83,8 +102,6 @@
 
     <!-- Banner right illustration -->
     <div class="w-full md:w-2/3 text-right float-right">
-      <!-- <DeveloperDarkIllustration v-if="this.$colorMode.value == 'dark'" />
-      <DeveloperLightIllustration v-else /> -->
       <img
         v-if="this.$colorMode.value == 'dark'"
         src="~/static/developer-dark.svg"
@@ -94,24 +111,5 @@
     </div>
   </section>
 </template>
-
-<script>
-import feather from "feather-icons";
-
-export default {
-  data: () => {
-    return {
-      // Todo
-    };
-  },
-
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
-  },
-};
-</script>
 
 <style lang="scss" scoped></style>
