@@ -1,3 +1,21 @@
+<script>
+import feather from "feather-icons";
+import Button from "./reusable/Button.vue";
+export default {
+  props: ["showModal", "modal", "categories"],
+  components: { Button },
+  data: () => {
+    return {
+      // @todo
+    };
+  },
+  mounted() {
+    feather.replace();
+  },
+  methods: {},
+};
+</script>
+
 <template>
   <transition name="fade">
     <div v-show="modal" class="font-general-regular fixed inset-0 z-30">
@@ -167,7 +185,8 @@
                   </div>
 
                   <div class="mt-6 pb-4 sm:pb-1">
-                    <button
+                    <Button
+                      title="Send Request"
                       class="
                         px-4
                         sm:px-6
@@ -182,16 +201,15 @@
                       "
                       type="submit"
                       aria-label="Submit Request"
-                    >
-                      Send Request
-                    </button>
+                    />
                   </div>
                 </form>
               </div>
               <div
                 class="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right"
               >
-                <button
+                <Button
+                  title="Close"
                   class="
                     px-4
                     sm:px-6
@@ -207,10 +225,8 @@
                     duration-500
                   "
                   @click="showModal()"
-                  aria-label="Close Modal"
-                >
-                  Close
-                </button>
+                  aria-label="Close Hire Me Modal"
+                />
               </div>
             </div>
           </div>
@@ -219,22 +235,6 @@
     </div>
   </transition>
 </template>
-
-<script>
-import feather from "feather-icons";
-export default {
-  props: ["showModal", "modal", "categories"],
-  data: () => {
-    return {
-      // Todo
-    };
-  },
-  mounted() {
-    feather.replace();
-  },
-  methods: {},
-};
-</script>
 
 <style>
 .modal-body {

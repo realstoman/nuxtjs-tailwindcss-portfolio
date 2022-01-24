@@ -1,8 +1,9 @@
 <script>
 import AppBanner from "../components/shared/AppBanner.vue";
+import Button from "../components/reusable/Button.vue";
 export default {
   scrollToTop: true,
-  components: { AppBanner },
+  components: { AppBanner, Button },
 };
 </script>
 
@@ -33,8 +34,9 @@ export default {
           duration-300
         "
         aria-label="More Projects"
-        >More Projects</NuxtLink
       >
+        <Button title="More Projects" />
+      </NuxtLink>
     </div>
   </div>
 </template>

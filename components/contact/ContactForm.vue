@@ -1,5 +1,7 @@
 <script>
+import Button from "../reusable/Button.vue";
 export default {
+  components: { Button },
   data: () => {
     return {
       // @todo
@@ -165,7 +167,8 @@ export default {
         </div>
 
         <div class="mt-6">
-          <button
+          <Button
+            title="Send Message"
             class="
               px-4
               py-2.5
@@ -179,9 +182,7 @@ export default {
             "
             type="submit"
             aria-label="Send Message"
-          >
-            Send Message
-          </button>
+          />
         </div>
       </form>
     </div>
