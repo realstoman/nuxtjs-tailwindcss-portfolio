@@ -3,6 +3,7 @@
     <!-- About me counters start -->
     <div
       class="
+        font-general-regular
         container
         mx-auto
         py-20
@@ -11,10 +12,11 @@
         text-center
       "
     >
-      <!-- About me single counter -->
+      <!-- Years of experience counter -->
       <div class="mb-20 sm:mb-0">
         <span
           class="
+            font-general-medium
             text-4xl
             font-bold
             text-secondary-dark
@@ -32,6 +34,7 @@
       <div class="mb-20 sm:mb-0">
         <span
           class="
+            font-general-medium
             text-4xl
             font-bold
             text-secondary-dark
@@ -49,6 +52,7 @@
       <div class="mb-20 sm:mb-0">
         <span
           class="
+            font-general-medium
             text-4xl
             font-bold
             text-secondary-dark
@@ -66,6 +70,7 @@
       <div class="mb-20 sm:mb-0">
         <span
           class="
+            font-general-medium
             text-4xl
             font-bold
             text-secondary-dark
