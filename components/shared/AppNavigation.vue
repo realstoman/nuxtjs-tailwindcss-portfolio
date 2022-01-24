@@ -3,6 +3,7 @@
   <div
     :class="isOpen ? 'block' : 'hidden'"
     class="
+      font-general-regular
       m-0
       sm:ml-4
       mt-5
@@ -19,9 +20,7 @@
       to="/projects"
       class="
         block
-        text-left text-lg
-        font-thin
-        text-primary-dark
+        text-left text-lg text-primary-dark
         dark:text-ternary-light
         hover:text-secondary-dark
         dark:hover:text-secondary-light
@@ -36,9 +35,7 @@
       to="/about"
       class="
         block
-        text-left text-lg
-        font-thin
-        text-primary-dark
+        text-left text-lg text-primary-dark
         dark:text-ternary-light
         hover:text-secondary-dark
         dark:hover:text-secondary-light
@@ -58,9 +55,7 @@
       to="/contact"
       class="
         block
-        text-left text-lg
-        font-thin
-        text-primary-dark
+        text-left text-lg text-primary-dark
         dark:text-ternary-light
         hover:text-secondary-dark
         dark:hover:text-secondary-light
@@ -78,6 +73,7 @@
     >
     <div
       class="
+        font-general-regular
         border-t-2
         pt-3
         sm:pt-0 sm:border-t-0
@@ -90,7 +86,6 @@
           sm:hidden
           block
           text-left text-md
-          font-thin
           bg-indigo-500
           hover:bg-indigo-600
           text-white
@@ -119,6 +114,5 @@ export default {
 #nav .nuxt-link-exact-active,
 #nav .nuxt-link-active {
   @apply text-indigo-700 dark:text-indigo-400;
-  @apply font-normal;
 }
 </style>

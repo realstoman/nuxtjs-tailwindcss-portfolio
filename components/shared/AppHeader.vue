@@ -131,11 +131,10 @@
         class="hidden sm:flex justify-between items-center flex-col md:flex-row"
       >
         <!-- Hire me button -->
-        <div class="hidden md:block">
+        <div class="font-general-medium hidden md:block">
           <button
             class="
               text-md
-              font-medium
               bg-indigo-500
               hover:bg-indigo-600
               text-white
@@ -240,10 +239,12 @@
 import { mapState } from "vuex";
 // import feather from "feather-icons";
 import HireMeModal from "../HireMeModal.vue";
+import AppNavigation from "./AppNavigation.vue";
 
 export default {
   components: {
     HireMeModal,
+    AppNavigation,
   },
   data: () => {
     return {
