@@ -1,13 +1,55 @@
+<script>
+import { mapState } from "vuex";
+import feather from "feather-icons";
+
+export default {
+  data: () => {
+    return {
+      selectedProject: "",
+      searchProject: "",
+    };
+  },
+  computed: {
+    ...mapState(["projectsHeading", "projectsDescription", "projects"]),
+    filteredProjects() {
+      if (this.selectedProject) {
+        return this.filterProjectsByCategory();
+      } else if (this.searchProject) {
+        return this.filterProjectsBySearch();
+      }
+      return this.projects;
+    },
+  },
+  methods: {
+    filterProjectsByCategory() {
+      return this.projects.filter((item) => {
+        let category =
+          item.category.charAt(0).toUpperCase() + item.category.slice(1);
+        return category.includes(this.selectedProject);
+      });
+    },
+    filterProjectsBySearch() {
+      let project = new RegExp(this.searchProject, "i");
+      return this.projects.filter((el) => el.title.match(project));
+    },
+  },
+  mounted() {
+    feather.replace();
+  },
+};
+</script>
+
 <template>
   <div class="pt-10 sm:pt-20 md:pt-24">
     <!-- Projects grid header -->
     <div class="text-center">
       <p
         class="
+          font-general-semibold
           text-2xl
           sm:text-5xl
           font-semibold
-          mb-3
+          mb-2
           text-ternary-dark
           dark:text-ternary-light
         "
@@ -21,15 +63,16 @@
     </div>
 
     <!-- Filter and search projects -->
-    <div class="mt-10 sm:mt-16">
+    <div class="mt-8 sm:mt-10">
       <h3
         class="
+          font-general-regular
           text-center text-secondary-dark
           dark:text-ternary-light
           text-md
           sm:text-xl
           font-normal
-          mb-3
+          mb-4
         "
       >
         Search projects by title or filter by category
@@ -41,7 +84,7 @@
           border-b border-primary-light
           dark:border-secondary-dark
           pb-3
-          gap-3
+          gap-2
         "
       >
         <div class="flex justify-between gap-2">
@@ -65,6 +108,7 @@
           <input
             v-model="searchProject"
             class="
+              font-general-medium
               pl-3
               pr-1
               sm:px-4
@@ -136,46 +180,5 @@
     </div>
   </div>
 </template>
-
-<script>
-import { mapState } from "vuex";
-import feather from "feather-icons";
-
-export default {
-  data: () => {
-    return {
-      selectedProject: "",
-      searchProject: "",
-    };
-  },
-  computed: {
-    ...mapState(["projectsHeading", "projectsDescription", "projects"]),
-    filteredProjects() {
-      if (this.selectedProject) {
-        return this.filterProjectsByCategory();
-      } else if (this.searchProject) {
-        return this.filterProjectsBySearch();
-      }
-      return this.projects;
-    },
-  },
-  methods: {
-    filterProjectsByCategory() {
-      return this.projects.filter((item) => {
-        let category =
-          item.category.charAt(0).toUpperCase() + item.category.slice(1);
-        return category.includes(this.selectedProject);
-      });
-    },
-    filterProjectsBySearch() {
-      let project = new RegExp(this.searchProject, "i");
-      return this.projects.filter((el) => el.title.match(project));
-    },
-  },
-  mounted() {
-    feather.replace();
-  },
-};
-</script>
 
 <style lang="scss" scoped></style>
