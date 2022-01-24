@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div v-show="modal" class="fixed inset-0 z-30">
+    <div v-show="modal" class="font-general-regular fixed inset-0 z-30">
       <!-- Modal body background as backdrop -->
       <div
         v-show="modal"
@@ -31,6 +31,7 @@
                 max-h-screen
                 shadow-lg
                 flex-row
+                rounded-lg
                 relative
               "
             >
@@ -40,31 +41,16 @@
                   flex
                   justify-between
                   gap-10
-                  pt-5
-                  pr-3
-                  pb-5
-                  pl-8
+                  p-5
                   border-b border-ternary-light
                   dark:border-ternary-dark
                 "
               >
-                <h5
-                  class="
-                    text-primary-dark
-                    dark:text-primary-light
-                    text-lg
-                    md:text-2xl
-                  "
-                >
+                <h5 class="text-primary-dark dark:text-primary-light text-xl">
                   What project are you looking for?
                 </h5>
                 <button
-                  class="
-                    pr-2
-                    font-bold
-                    text-primary-dark
-                    dark:text-primary-light
-                  "
+                  class="px-4 text-primary-dark dark:text-primary-light"
                   @click="showModal()"
                 >
                   <i data-feather="x" class="w-8 sm:w-12"></i>
@@ -79,7 +65,7 @@
                   "
                   class="max-w-xl m-4 text-left"
                 >
-                  <div class="">
+                  <div class="mt-0">
                     <input
                       class="
                         w-full
@@ -89,7 +75,6 @@
                         dark:border-secondary-dark
                         rounded-md
                         text-md
-                        dark:font-medium
                         bg-secondary-light
                         dark:bg-ternary-dark
                         text-primary-dark
@@ -113,7 +98,6 @@
                         dark:border-secondary-dark
                         rounded-md
                         text-md
-                        dark:font-medium
                         bg-secondary-light
                         dark:bg-ternary-dark
                         text-primary-dark
@@ -137,7 +121,6 @@
                         dark:border-secondary-dark
                         rounded-md
                         text-md
-                        dark:font-medium
                         bg-secondary-light
                         dark:bg-ternary-dark
                         text-primary-dark
@@ -169,7 +152,6 @@
                         dark:border-secondary-dark
                         rounded-md
                         text-md
-                        dark:font-medium
                         bg-secondary-light
                         dark:bg-ternary-dark
                         text-primary-dark
@@ -192,12 +174,11 @@
                         py-2
                         sm:py-2.5
                         text-white
-                        font-normal
-                        sm:font-medium
                         bg-indigo-500
                         hover:bg-indigo-600
                         rounded-md
                         focus:ring-1 focus:ring-indigo-900
+                        duration-500
                       "
                       type="submit"
                       aria-label="Submit Request"
@@ -222,9 +203,8 @@
                     dark:text-secondary-dark
                     dark:hover:bg-primary-light
                     rounded-md
-                    font-normal
-                    sm:font-bold
                     focus:ring-1 focus:ring-indigo-900
+                    duration-500
                   "
                   @click="showModal()"
                   aria-label="Close Modal"
