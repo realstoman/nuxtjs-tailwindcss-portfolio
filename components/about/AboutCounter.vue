@@ -1,3 +1,13 @@
+<script>
+export default {
+  data: () => {
+    return {
+      // @todo
+    };
+  },
+};
+</script>
+
 <template>
   <div class="mt-10 sm:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm">
     <!-- About me counters start -->
@@ -30,7 +40,7 @@
         >
       </div>
 
-      <!-- About me single counter -->
+      <!-- GitHub stars counter -->
       <div class="mb-20 sm:mb-0">
         <span
           class="
@@ -48,7 +58,7 @@
         >
       </div>
 
-      <!-- About me single counter -->
+      <!-- Positive feedback counter -->
       <div class="mb-20 sm:mb-0">
         <span
           class="
@@ -66,7 +76,7 @@
         >
       </div>
 
-      <!-- About me single counter -->
+      <!-- Projects completed counter -->
       <div class="mb-20 sm:mb-0">
         <span
           class="
@@ -86,9 +96,5 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style lang="scss" scoped></style>

@@ -3,7 +3,7 @@ import { mapState } from "vuex";
 export default {
   data: () => {
     return {
-      // Todo
+      // @todo
     };
   },
   computed: {
