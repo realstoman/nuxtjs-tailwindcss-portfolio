@@ -1,22 +1,21 @@
-<template>
-  <div class="container mx-auto">
-    <!-- Projects grid -->
-    <ProjectsGrid />
-  </div>
-</template>
-
 <script>
 export default {
   scrollToTop: true,
   data: () => {
     return {
-      // Todo
+      // @todo
     };
   },
   computed: {
-    // Todo
+    // @todo
   },
 };
 </script>
+
+<template>
+  <div class="container mx-auto">
+    <ProjectsGrid />
+  </div>
+</template>
 
 <style lang="scss" scoped></style>

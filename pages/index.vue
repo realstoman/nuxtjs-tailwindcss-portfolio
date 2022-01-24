@@ -1,9 +1,15 @@
+<script>
+import AppBanner from "../components/shared/AppBanner.vue";
+export default {
+  scrollToTop: true,
+  components: { AppBanner },
+};
+</script>
+
 <template>
   <div class="container mx-auto">
-    <!-- App banner -->
     <AppBanner />
 
-    <!-- Projects grid -->
     <ProjectsGrid />
 
     <!-- View more projects button -->
@@ -11,6 +17,7 @@
       <NuxtLink
         to="/projects"
         class="
+          font-general-medium
           flex
           items-center
           px-6
@@ -21,10 +28,9 @@
           bg-indigo-500
           hover:bg-indigo-600
           focus:ring-1 focus:ring-indigo-900
-          text-white text-md
-          sm:text-
-          font-normal
-          sm:font-medium
+          text-white text-lg
+          sm:text-xl
+          duration-300
         "
         aria-label="More Projects"
         >More Projects</NuxtLink
@@ -32,13 +38,5 @@
     </div>
   </div>
 </template>
-
-<script>
-import AppBanner from "../components/shared/AppBanner.vue";
-export default {
-  scrollToTop: true,
-  components: { AppBanner },
-};
-</script>
 
 <style scoped></style>

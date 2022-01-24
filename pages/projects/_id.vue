@@ -1,3 +1,26 @@
+<script>
+import feather from "feather-icons";
+export default {
+  scrollToTop: true,
+  data: () => {
+    return {
+      // @todo
+    };
+  },
+  computed: {
+    project() {
+      return this.$store.getters.getProjectById(this.$route.params.id);
+    },
+  },
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
+  },
+};
+</script>
+
 <template>
   <div class="container mx-auto">
     <!-- Check if there are projects and then load -->
@@ -212,28 +235,5 @@
     </div>
   </div>
 </template>
-
-<script>
-import feather from "feather-icons";
-export default {
-  scrollToTop: true,
-  data: () => {
-    return {
-      // Todo
-    };
-  },
-  computed: {
-    project() {
-      return this.$store.getters.getProjectById(this.$route.params.id);
-    },
-  },
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
-  },
-};
-</script>
 
 <style lang="scss" scoped></style>
