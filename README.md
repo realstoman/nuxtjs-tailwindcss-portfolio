@@ -15,6 +15,7 @@ A simple portfolio starter theme built with Nuxt.js and TailwindCSS. This is the
 - [Tailwind CSS v2](https://tailwindcss.com)
 - Theme Switcher with Dark Mode
 - Vuex for state management
+- Reusable components
 - Projects filter by category
 - Projects search by title
 - Vue transitions
@@ -37,31 +38,31 @@ A simple portfolio starter theme built with Nuxt.js and TailwindCSS. This is the
 brew install node
 ```
 
-2. ##### Make sure you have Yarn installed, if you don't have it:
-
-```
-npm install --global yarn
-```
-
-3. ##### Clone the repo:
+2. ##### Clone the repo:
 
 ```
 git clone https://github.com/realstoman/nuxtjs-tailwindcss-portfolio.git
 ```
 
-4. ##### Open the project folder:
+3. ##### Open the project folder:
 
 ```
 cd nuxtjs-tailwindcss-portfolio
 ```
 
-5. ##### Install packages and dependencies:
+4. ##### Install packages and dependencies:
 
 ```
-yarn install
+yarn
 ```
 
-6. ##### Start a local dev server at `http://localhost:3000`:
+4. NOTE: If you don't have yarn installed, you can install it globally using npm:
+
+```
+npm install --global yarn
+```
+
+5. ##### Start a local dev server at `http://localhost:3000`:
 
 ```
 yarn dev
