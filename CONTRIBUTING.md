@@ -8,9 +8,8 @@ Please note that this project is released with a [Code of Conduct]([https://gith
 
 ### Fork this repo
 
-```
-git clone https://github.com/realstoman/nuxtjs-tailwindcss-portfolio.git
-```
+[https://github.com/realstoman/nuxtjs-tailwindcss-portfolio](https://github.com/realstoman/nuxtjs-tailwindcss-portfolio)
+
 
 ### Check the issues section if there are already issues and see if you can fix them
 
