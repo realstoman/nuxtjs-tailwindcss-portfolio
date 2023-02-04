@@ -26,7 +26,11 @@ A simple portfolio starter theme built with Nuxt.js and Tailwind CSS. This is th
 - Back to top button
 - Download file button
 
-## Installation
+## To Contribute to this project:
+
+[See Contribution Guidlines](https://github.com/realstoman/nuxtjs-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
+
+## Setup
 
 1. ##### First of all, make sure you have Node JS installed. If you don't have it:
 
@@ -95,3 +99,6 @@ yarn generate
 - Images from [Unsplash](https://unsplash.com)
 - Feel free to use it as your own portfolio
 - Contributions are welcome
+
+### License
+[MIT](https://github.com/realstoman/nuxtjs-tailwindcss-portfolio/blob/main/LICENSE)
