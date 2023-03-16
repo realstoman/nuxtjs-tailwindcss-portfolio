@@ -736,7 +736,7 @@ export const state = () => ({
       id: uuidv4(),
       name: "Linkedin",
       icon: "linkedin",
-      url: "linkedin://linkedin.com/in/realstoman",
+      url: "https://linkedin.com/in/realstoman",
     },
     {
       id: uuidv4(),
