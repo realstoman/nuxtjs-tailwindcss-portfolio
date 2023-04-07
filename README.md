@@ -8,6 +8,12 @@ A simple portfolio starter theme built with Nuxt.js and Tailwind CSS. This is th
 
 [https://nuxtjs-tailwindcss-portfolio.netlify.com](https://nuxtjs-tailwindcss-portfolio.netlify.com)
 
+## Other versions of this project
+
+- Vue.js Version: [https://github.com/realstoman/vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio)
+- React Version: [https://github.com/realstoman/react-tailwindcss-portfolio](https://github.com/realstoman/react-tailwindcss-portfolio)
+- Next.js Version: [https://github.com/realstoman/nextjs-tailwindcss-portfolio](https://github.com/realstoman/nextjs-tailwindcss-portfolio)
+
 ## Features
 
 - Simple and responsive design
@@ -99,4 +105,5 @@ yarn generate
 - Contributions are welcome
 
 ### License
+
 [MIT](https://github.com/realstoman/nuxtjs-tailwindcss-portfolio/blob/main/LICENSE)
