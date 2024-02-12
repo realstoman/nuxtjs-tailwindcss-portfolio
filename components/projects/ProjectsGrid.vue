@@ -75,7 +75,7 @@ export default {
           mb-4
         "
       >
-        Search projects by title or filter by category
+        Buscar Asignatura por nombre
       </h3>
       <div
         class="
@@ -106,7 +106,7 @@ export default {
             ></i>
           </span>
           <input
-            v-model="searchProject"
+            v-model="Buscar"
             class="
               font-general-medium
               pl-3
@@ -127,7 +127,7 @@ export default {
             name="name"
             type="search"
             required=""
-            placeholder="Search Projects"
+            placeholder="Filtrar Curso"
             aria-label="Name"
           />
         </div>

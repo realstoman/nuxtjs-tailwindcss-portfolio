@@ -43,7 +43,7 @@ export default {
           uppercase
         "
       >
-        Hi, Iam Stoman
+        Hola, nosotros Somos SIGMA
       </h1>
       <p
         class="
@@ -58,7 +58,7 @@ export default {
           text-gray-400
         "
       >
-        A Full-Stack Developer & Design Enthusiast
+        Un grupo de Asesoría Educativa Virtual
       </p>
       <div class="flex justify-center sm:block">
         <a
@@ -94,7 +94,7 @@ export default {
             class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"
           ></i>
           <span class="text-sm sm:text-lg font-general-medium duration-100"
-            >Download CV</span
+            >Conocenos</span
           ></a
         >
       </div>
@@ -104,10 +104,10 @@ export default {
     <div class="w-full md:w-2/3 text-right float-right">
       <img
         v-if="this.$colorMode.value == 'dark'"
-        src="~/static/developer-dark.svg"
+        src="~/static/developer.png"
         alt="Developer Dark"
       />
-      <img v-else src="~/static/developer.svg" alt="Developer Light" />
+      <img v-else src="~/static/developer.png" alt="Developer Light" />
     </div>
   </section>
 </template>

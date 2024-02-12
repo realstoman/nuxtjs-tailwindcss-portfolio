@@ -35,7 +35,7 @@ export default {
         sm:py-2
       "
       aria-label="Projects"
-      >Projects</NuxtLink
+      >Cursos</NuxtLink
     >
     <NuxtLink
       to="/about"
@@ -55,7 +55,7 @@ export default {
         dark:border-secondary-dark
       "
       aria-label="About Me"
-      >About Me</NuxtLink
+      >¿Quienes Somos?</NuxtLink
     >
     <NuxtLink
       to="/contact"
@@ -75,7 +75,7 @@ export default {
         dark:border-secondary-dark
       "
       aria-label="Contact"
-      >Contact</NuxtLink
+      >Contacto</NuxtLink
     >
     <div
       class="
@@ -104,7 +104,7 @@ export default {
         @click="showModal()"
         aria-label="Hire Me Button"
       >
-        Hire Me
+        Inscribirme
       </button>
     </div>
   </div>

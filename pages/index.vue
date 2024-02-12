@@ -35,7 +35,7 @@ export default {
         "
         aria-label="More Projects"
       >
-        <Button title="More Projects" />
+        <Button title="Mas Cursos" />
       </NuxtLink>
     </div>
   </div>

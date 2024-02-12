@@ -33,10 +33,10 @@ export default {
             dark:text-secondary-light
             mb-2
           "
-          >7+</span
+          >+4</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
-          >Years of experience</span
+          >Años de Experiencia</span
         >
       </div>
 
@@ -51,10 +51,10 @@ export default {
             dark:text-secondary-light
             mb-2
           "
-          >2k</span
+          >+300</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
-          >Stars on GitHub</span
+          >Alumnos</span
         >
       </div>
 
@@ -69,10 +69,10 @@ export default {
             dark:text-secondary-light
             mb-2
           "
-          >32</span
+          >+250</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
-          >Positive feedback</span
+          >Recomendaciones</span
         >
       </div>
 
@@ -87,10 +87,10 @@ export default {
             dark:text-secondary-light
             mb-2
           "
-          >77</span
+          >+20</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
-          >Projects completed</span
+          >Cursos Impartidos</span
         >
       </div>
     </div>

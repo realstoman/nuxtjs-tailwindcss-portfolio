@@ -45,7 +45,7 @@ export default {
             mb-5
           "
         >
-          Follow me
+          Siguenos
         </p>
         <ul class="flex gap-4 sm:gap-8">
           <a

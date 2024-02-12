@@ -22,7 +22,7 @@ export default {
           mb-8
         "
       >
-        Contact details
+        Detalles de Contacto
       </h2>
       <ul class="font-general-regular">
         <li class="flex" v-for="contact in contacts" :key="contact.id">

@@ -61,17 +61,18 @@ export default {
           <NuxtLink to="/">
             <img
               v-if="this.$colorMode.value == 'dark'"
-              src="~/static/logo-light.svg"
-              class="w-36"
+              src="~/static/sigma.png"
+              class="w-8"
               alt="Light Logo"
+              style="filter: invert(1);"
             />
 
             <img
               v-else
-              src="~/static/logo-dark.svg"
+              src="~/static/sigma.png"
               alt="Color Logo"
-              class="w-36"
-            />
+              class="w-8"
+            /><b style="margin-left: 10px; color: white;">SIGMA</b>
           </NuxtLink>
         </div>
 
@@ -196,7 +197,7 @@ export default {
             @click="showModal()"
             aria-label="Hire Me Button"
           >
-            Hire Me
+            Inscribirme
           </button>
         </div>
 

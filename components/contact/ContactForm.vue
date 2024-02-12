@@ -35,7 +35,7 @@ export default {
           mb-8
         "
       >
-        Contact Form
+        Formulario de Contacto
       </p>
       <form
         @submit="
@@ -49,7 +49,7 @@ export default {
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="name"
-            >Full Name</label
+            >Nombre Completo</label
           >
           <input
             class="
@@ -71,7 +71,7 @@ export default {
             name="name"
             type="text"
             required=""
-            placeholder="Your Name"
+            placeholder="Nombre"
             aria-label="Name"
           />
         </div>
@@ -79,7 +79,7 @@ export default {
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="email"
-            >Email</label
+            >Correo Electronico</label
           >
           <input
             class="
@@ -101,7 +101,7 @@ export default {
             name="email"
             type="text"
             required=""
-            placeholder="Your Email"
+            placeholder="Email"
             aria-label="Email"
           />
         </div>
@@ -109,7 +109,7 @@ export default {
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="subject"
-            >Subject</label
+            >Asunto</label
           >
           <input
             class="
@@ -131,7 +131,7 @@ export default {
             name="subject"
             type="text"
             required=""
-            placeholder="Subject"
+            placeholder="Duda"
             aria-label="Subject"
           />
         </div>
@@ -140,7 +140,7 @@ export default {
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="message"
-            >Message</label
+            >Mensaje</label
           >
           <textarea
             class="
@@ -162,7 +162,7 @@ export default {
             name="message"
             cols="14"
             rows="6"
-            aria-label="Message"
+            aria-label="Descripcion"
           ></textarea>
         </div>
 
@@ -181,7 +181,7 @@ export default {
               duration-500
             "
             type="submit"
-            aria-label="Send Message"
+            aria-label="Enviar"
           />
         </div>
       </form>
